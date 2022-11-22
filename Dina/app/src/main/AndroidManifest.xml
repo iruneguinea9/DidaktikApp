@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Dina"
         tools:targetApi="31">
         <activity
+            android:name=".Actividad3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Actividad2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Actividad1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
