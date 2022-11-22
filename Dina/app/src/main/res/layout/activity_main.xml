@@ -10,24 +10,37 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:text="ARRANTZALEEN BIZITZAN MURGILTZEN"
+        android:textAlignment="center"
+        android:textColor="@color/azulPrimario"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        app:srcCompat="@drawable/dina" />
+
     <Button
-        android:id="@+id/botonacti1"
+        android:id="@+id/hasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60sp"
-        android:text="Actividad 1" />
+        android:text="HASI" />
 
     <Button
-        android:id="@+id/botonacti2"
+        android:id="@+id/jarraitu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 2" />
-
+        android:text="JARRAITU" />
 
     <Button
-        android:id="@+id/botonacti3"
+        android:id="@+id/pruebas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 3" />
-
+        android:text="PARA PRUEBAS" />
 </LinearLayout>

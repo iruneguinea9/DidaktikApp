@@ -9,35 +9,33 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button acti1,acti2,acti3;
+    private Button hasi,jarraitu,pruebas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        acti1 = findViewById(R.id.botonacti1);
-        acti2 = findViewById(R.id.botonacti2);
-        acti3 = findViewById(R.id.botonacti3);
+        hasi = findViewById(R.id.hasi);
+        jarraitu = findViewById(R.id.jarraitu);
+        pruebas = findViewById(R.id.pruebas);
 
-        acti1.setOnClickListener(new View.OnClickListener() {
+        hasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Actividad1.class);
-                startActivity(intent);
+
             }
 
         });
-        acti2.setOnClickListener(new View.OnClickListener() {
+        jarraitu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Actividad2.class);
-                startActivity(intent);
+
             }
         });
-        acti3.setOnClickListener(new View.OnClickListener() {
+        pruebas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Actividad3.class);
+                Intent intent = new Intent(MainActivity.this, ParaProbarActividades.class);
                 startActivity(intent);
             }
         });

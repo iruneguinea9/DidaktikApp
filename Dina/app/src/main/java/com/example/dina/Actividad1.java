@@ -41,6 +41,7 @@ public class Actividad1 extends AppCompatActivity {
                     // mal, vuelve a empezar
                     Dialogo_repetir_tarea d2 = new Dialogo_repetir_tarea();
                     d2.show(getSupportFragmentManager(),"mensaje2");
+                    vaciar();
 
                 }
             }
@@ -74,5 +75,15 @@ public class Actividad1 extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+    private void vaciar(){
+        gap1.setText("");
+        gap2.setText("");
+        gap3.setText("");
+        gap4.setText("");
+        gap5.setText("");
+        gap6.setText("");
+        gap7.setText("");
+        gap8.setText("");
     }
 }
