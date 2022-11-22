@@ -43,7 +43,6 @@
                 android:id="@+id/imageView10"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginRight="40dp"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
@@ -84,7 +83,6 @@
                 android:id="@+id/imageView12"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginRight="40dp"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
@@ -111,7 +109,6 @@
                 android:id="@+id/imageView13"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginRight="40dp"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
