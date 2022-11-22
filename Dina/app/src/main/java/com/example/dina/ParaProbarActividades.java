@@ -22,7 +22,7 @@ public class ParaProbarActividades extends AppCompatActivity {
         acti1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ParaProbarActividades.this, Actividad1.class);
+                Intent intent = new Intent(ParaProbarActividades.this, ExplicacionAct1.class);
                 startActivity(intent);
             }
 
