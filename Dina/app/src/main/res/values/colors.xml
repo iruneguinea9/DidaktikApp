@@ -6,5 +6,9 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="azulPrimario">#15C2E6</color>
+    <color name="azulSecundario">#318899</color>
+    <color name="amarilloPrimario">#E6D32C</color>
+    <color name="amarilloSecundario">#998B06</color>
+    <color name="amornico">#E62C79</color>
 </resources>
