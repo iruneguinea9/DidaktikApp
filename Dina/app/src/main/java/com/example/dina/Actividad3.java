@@ -19,7 +19,7 @@ public class Actividad3 extends AppCompatActivity {
     public void validacion(View view){
         if(comprobacion()){
             // la ha hecho bien, le damos una pieza
-            Dialogo_gana_pieza_act1 d1 = new Dialogo_gana_pieza_act1();
+            Dialogo_gana_pieza_act3 d1 = new Dialogo_gana_pieza_act3();
             d1.show(getSupportFragmentManager(),"mensaje");
         }
         else {
