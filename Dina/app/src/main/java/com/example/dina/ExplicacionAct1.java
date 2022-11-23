@@ -3,18 +3,23 @@ package com.example.dina;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class ExplicacionAct1 extends AppCompatActivity {
     Button goazen;
+    Switch volumen;
     TextView texto;
     ImageView imagen;
+    private MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +27,11 @@ public class ExplicacionAct1 extends AppCompatActivity {
         goazen = findViewById(R.id.botonGoazen);
         texto = findViewById(R.id.texto);
         imagen = findViewById(R.id.imagenquecambia);
+        volumen = findViewById(R.id.volumen);
         imagen.setVisibility(View.INVISIBLE);
         goazen.setClickable(false);
+        mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act1);
+        mediaPlayer.start();
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -63,7 +71,24 @@ public class ExplicacionAct1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ExplicacionAct1.this, Actividad1.class);
                 startActivity(intent);
+                mediaPlayer.stop();
+                finish();
             }
         });
+        volumen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (volumen.isChecked())
+                    mediaPlayer.setVolume(1,1);
+                else
+                    mediaPlayer.setVolume(0,0);
+            }
+
+        });
+    }
+    @Override
+    public void onBackPressed() {
+        mediaPlayer.stop();
+        finish();
     }
 }

@@ -2,15 +2,19 @@ package com.example.dina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class Actividad1 extends AppCompatActivity {
     private final String[] respuestas = new String[] {"santurce","salla","deprisa","gritando","compra","sardinitas","ricas","yo"};
-    Button egiaztatu;
-    EditText gap1,gap2,gap3,gap4,gap5,gap6,gap7,gap8;
+    private Button egiaztatu;
+    private EditText gap1,gap2,gap3,gap4,gap5,gap6,gap7,gap8;
+    private ImageButton play,pause,restart;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +31,12 @@ public class Actividad1 extends AppCompatActivity {
         gap6 = findViewById(R.id.gap6);
         gap7 = findViewById(R.id.gap7);
         gap8 = findViewById(R.id.gap8);
+        play = findViewById(R.id.botonPlay);
+        pause = findViewById(R.id.botonPause);
+        restart = findViewById(R.id.botonRestart);
 
-
+        mediaPlayer = MediaPlayer.create(this, R.raw.cancion_act1);
+        mediaPlayer.start();
         egiaztatu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +55,32 @@ public class Actividad1 extends AppCompatActivity {
             }
 
         });
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.start();
+            }
+        });
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.pause();
+            }
+        });
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.pause();
+                mediaPlayer.seekTo(0);
+                mediaPlayer.start();
+            }
+        });
 
+    }
+    @Override
+    public void onBackPressed() {
+        mediaPlayer.stop();
+        finish();
     }
     private boolean comprobarResultados(){
         if(!gap1.getText().toString().toLowerCase().equals(respuestas[0])) {

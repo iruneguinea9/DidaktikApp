@@ -30,7 +30,8 @@
         android:id="@+id/hasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HASI" />
+        android:text="HASI"
+        android:textColor="@color/blanco" />
 
     <Button
         android:id="@+id/jarraitu"

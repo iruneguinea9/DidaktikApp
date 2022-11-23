@@ -8,11 +8,36 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp">
+        android:layout_height="89dp"
+        android:orientation="horizontal">
 
-    </FrameLayout>
+        <ImageButton
+            android:id="@+id/botonRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarilloPrimario"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/botonPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarilloPrimario"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/botonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarilloPrimario"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
