@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,6 +45,15 @@ public class Actividad1 extends AppCompatActivity {
                     // la ha hecho bien, le damos una pieza
                     Dialogo_gana_pieza_act1 d1 = new Dialogo_gana_pieza_act1();
                     d1.show(getSupportFragmentManager(),"mensaje");
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        public void run() {
+                            mediaPlayer.stop();
+                            finish();
+                        }
+                    }, 10000);
+
+                    // añadir una pieza de puzzle
                 }
                 else{
                     // mal, vuelve a empezar
