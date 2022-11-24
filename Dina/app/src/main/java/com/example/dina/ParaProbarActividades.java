@@ -11,7 +11,10 @@ import android.widget.Toast;
 public class ParaProbarActividades extends AppCompatActivity {
 
     private Button acti1,acti2,acti3,acti4,acti5;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +52,13 @@ public class ParaProbarActividades extends AppCompatActivity {
         acti4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 //Intent intent = new Intent(ParaProbarActividades.this, Actividad4.class);
                 //startActivity(intent);
+=======
+                Intent intent = new Intent(ParaProbarActividades.this, ExplicacionAct4.class);
+                startActivity(intent);
+>>>>>>> master
             }
         });
         acti5.setOnClickListener(new View.OnClickListener() {
