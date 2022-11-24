@@ -69,9 +69,11 @@ public class ExplicacionAct1 extends AppCompatActivity {
         goazen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayer.stop();
+
                 Intent intent = new Intent(ExplicacionAct1.this, Actividad1.class);
                 startActivity(intent);
-                mediaPlayer.stop();
+
                 finish();
             }
         });

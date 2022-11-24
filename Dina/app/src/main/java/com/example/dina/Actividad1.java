@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Actividad1 extends AppCompatActivity {
     private final String[] respuestas = new String[] {"santurce","salla","deprisa","gritando","compra","sardinitas","ricas","yo"};
@@ -16,6 +18,8 @@ public class Actividad1 extends AppCompatActivity {
     private EditText gap1,gap2,gap3,gap4,gap5,gap6,gap7,gap8;
     private ImageButton play,pause,restart;
     private MediaPlayer mediaPlayer;
+    private ImageView imagen;
+    private TextView explicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +39,11 @@ public class Actividad1 extends AppCompatActivity {
         play = findViewById(R.id.botonPlay);
         pause = findViewById(R.id.botonPause);
         restart = findViewById(R.id.botonRestart);
+        explicacion = findViewById(R.id.explicacion);
+        imagen = findViewById(R.id.imagen);
+        explicacion.setText("Gustukoa izan duzu? Hori espero. Izan ere, jarduera honetan Sardina Saltzaileen abesti famatuaren letra agertzen zaizu, baina kontuz! Abestiak hainbat hutsune ditu eta zure lana, hutsuneak betetzea izango da.");
 
         mediaPlayer = MediaPlayer.create(this, R.raw.cancion_act1);
-        mediaPlayer.start();
         egiaztatu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
