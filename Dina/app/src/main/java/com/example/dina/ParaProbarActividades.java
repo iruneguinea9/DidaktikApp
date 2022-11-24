@@ -10,7 +10,8 @@ import android.widget.Toast;
 
 public class ParaProbarActividades extends AppCompatActivity {
 
-    private Button acti1,acti2,acti3,acti5;
+    private Button acti1,acti2,acti3,acti4,acti5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class ParaProbarActividades extends AppCompatActivity {
         acti1 = findViewById(R.id.botonacti1);
         acti2 = findViewById(R.id.botonacti2);
         acti3 = findViewById(R.id.botonacti3);
+        acti4 = findViewById(R.id.botonacti4);
         acti5 = findViewById(R.id.botonacti5);
 
         acti1.setOnClickListener(new View.OnClickListener() {
@@ -44,11 +46,18 @@ public class ParaProbarActividades extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        acti4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(ParaProbarActividades.this, Actividad4.class);
+                //startActivity(intent);
+            }
+        });
         acti5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intent = new Intent(ParaProbarActividades.this, Actividad5.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(ParaProbarActividades.this, Actividad5.class);
+                startActivity(intent);
             }
         });
     }

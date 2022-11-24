@@ -28,16 +28,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Actividad 3" />
+
     <Button
         android:id="@+id/botonacti4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Actividad 4" />
+
     <Button
         android:id="@+id/botonacti5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Actividad 5" />
+
     <Button
         android:id="@+id/botonacti6"
         android:layout_width="match_parent"
@@ -53,4 +56,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Puzzle final" />
+
 </LinearLayout>

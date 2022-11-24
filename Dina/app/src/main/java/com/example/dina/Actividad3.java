@@ -36,6 +36,22 @@ public class Actividad3 extends AppCompatActivity {
         if (!rbAcertado.isChecked()) {
             return false;
         }
+        rbAcertado = findViewById(R.id.rbVerdadero2);
+        if (!rbAcertado.isChecked()) {
+            return false;
+        }
+        rbAcertado = findViewById(R.id.rbVerdadero3);
+        if (!rbAcertado.isChecked()) {
+            return false;
+        }
+        rbAcertado = findViewById(R.id.rbFalso5);
+        if (!rbAcertado.isChecked()) {
+            return false;
+        }
+        rbAcertado = findViewById(R.id.rbFalso4);
+        if (!rbAcertado.isChecked()) {
+            return false;
+        }
         return true;
     }
 

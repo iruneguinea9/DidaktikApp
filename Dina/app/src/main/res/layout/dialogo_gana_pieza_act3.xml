@@ -12,13 +12,12 @@
         android:layout_height="95dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="18dp"
         android:src="@drawable/piezapuzle20x20escala10" />
 
     <LinearLayout
-        android:layout_width="171dp"
+        android:layout_width="198dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:padding="3dp">
@@ -27,20 +26,21 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zorionak!"
+            android:text="Primeran!"
             android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="193dp"
             android:layout_height="wrap_content"
-            android:text="Oso ondo!!" />
+            android:text="Orain badakizu zergatik dauden umea eta txakurra hor." />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hemen duzu zure saria!" />
+            android:text="Hemen duzu saria!" />
+
     </LinearLayout>
 
 </LinearLayout>
