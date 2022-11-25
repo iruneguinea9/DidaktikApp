@@ -23,7 +23,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="411dp"
+        android:layout_height="342dp"
         app:srcCompat="@drawable/dina" />
 
     <Button
@@ -44,4 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PARA PRUEBAS" />
+
+    <ImageButton
+        android:id="@+id/creditos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/amarilloPrimario"
+        android:scaleType="fitEnd"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
 </LinearLayout>
