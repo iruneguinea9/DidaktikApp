@@ -98,7 +98,7 @@
         android:text="Goazen!" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivPuzzle11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_lock_silent_mode" />

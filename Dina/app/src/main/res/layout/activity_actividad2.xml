@@ -14,18 +14,20 @@
         android:gravity="right">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/ivCorazonVida"
             android:layout_width="87dp"
             android:layout_height="58dp"
             android:layout_gravity="center|right"
             app:srcCompat="@drawable/corazon16x13escala15" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvNVidas"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|right"
-            android:text="7" />
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
     </LinearLayout>
 
     <TableLayout
@@ -33,100 +35,148 @@
         android:layout_height="wrap_content">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
             android:layout_marginBottom="20dp"
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/ivPuzzle1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/ivPuzzle2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/ivPuzzle3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/ivPuzzle4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
+                app:srcCompat="@drawable/piezapuzle20x20escala10" />
+
+            <ImageView
+                android:id="@+id/ivPuzzle5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
+                app:srcCompat="@drawable/piezapuzle20x20escala10" />
+
+            <ImageView
+                android:id="@+id/ivPuzzle6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/ivPuzzle7"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/ivPuzzle8"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView14"
+                android:id="@+id/ivPuzzle9"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
+
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/ivPuzzle10"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/ivPuzzle11"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/ivPuzzle12"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="voltearCarta"
                 app:srcCompat="@drawable/piezapuzle20x20escala10" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center">
 

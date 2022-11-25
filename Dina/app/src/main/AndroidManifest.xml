@@ -15,6 +15,7 @@
         android:theme="@style/Theme.Dina"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".Creditos"
             android:exported="false">
             <meta-data
@@ -22,6 +23,8 @@
                 android:value="" />
         </activity>
         <activity
+=======
+>>>>>>> Stashed changes
             android:name=".Actividad5"
             android:exported="false">
             <meta-data
