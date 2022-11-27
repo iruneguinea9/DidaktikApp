@@ -60,6 +60,7 @@ public class Actividad2 extends AppCompatActivity {
                 ivPuzzle5, ivPuzzle6, ivPuzzle7, ivPuzzle8, ivPuzzle9, ivPuzzle10, ivPuzzle11,
                 ivPuzzle12};
 
+        //  Creamos y asignamos a un IV un objeto carta
         int contadorPareja = 0;
 
         for (int i = 0; i < listaIV.length; i++) {
@@ -72,13 +73,36 @@ public class Actividad2 extends AppCompatActivity {
                 contadorPareja++;
             }
         }
+
+        // Voltemoas todas las cartas durante 3 segundos
+        for (Carta c : listaCartas) {
+            c.voltear();
+        }
+
+        // Esperamos 3 segundos
+        try {
+            Thread.sleep(3000);
+
+        } catch (InterruptedException e) {
+
+        }
+
+        // Voltemoas todas las cartas durante 3 segundos
+        for (Carta c : listaCartas) {
+            c.ponerDorso();
+        }
     }
 
     private void finDelJuego(boolean ganar){
         if (ganar == true) {
-            //Poner codigo de victorioa
+            // Indormar al usuario de su victoria
+            Dialogo_gana_pieza_act3 d1 = new Dialogo_gana_pieza_act3();
+            d1.show(getSupportFragmentManager(),"mensaje");
         } else {
-            //Poner codigo de derrota
+            // Informar al usuario que ha perdido
+            Dialogo_repetir_tarea d2 = new Dialogo_repetir_tarea();
+            d2.show(getSupportFragmentManager(), "mensaje2");
+            this.recreate();
         }
     }
 
@@ -94,11 +118,14 @@ public class Actividad2 extends AppCompatActivity {
                     cartaActual = c;
                 }
             }
+            //Comprobamos si la pareja es correcta
             cartaActiva.comprobarPareja(cartaActual);
 
         } else {
+            // Buscamos la carta selecionada y guardamos su ID
             for (Carta c : listaCartas) {
                 if (v.getId() == c.getivPuzzle().getId()) {
+                    // Volteamos la carta y la guardamos en cartaActiva
                     c.voltear();
                     cartaActiva = c;
                 }
@@ -149,6 +176,7 @@ public class Actividad2 extends AppCompatActivity {
                 // Volteamos la otra carta y le damos medio segundo para que la vea
                 voltear();
                 c.voltear();
+
                 Thread.sleep(1000);
 
                 // Volvemos a voltear las cartas
@@ -160,20 +188,8 @@ public class Actividad2 extends AppCompatActivity {
             }
         }
 
-        public int getID(){
-            return this.id;
-        }
-
         public int getIDPareja(){
             return this.idPareja;
-        }
-
-        public void setID(int id) {
-            this.id = id;
-        }
-
-        public void setIDPareja(int idPareja) {
-            this.idPareja = idPareja;
         }
 
         public ImageView getivPuzzle(){

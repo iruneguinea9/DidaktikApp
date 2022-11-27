@@ -68,5 +68,4 @@ public class Actividad3 extends AppCompatActivity {
         rg = findViewById(R.id.radioGroup5);
         rg.clearCheck();
     }
-
 }
