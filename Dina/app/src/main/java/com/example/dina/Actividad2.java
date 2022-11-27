@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Actividad2 extends AppCompatActivity {
@@ -55,20 +56,32 @@ public class Actividad2 extends AppCompatActivity {
         // Declaramos la relacion del TextView
         tvNVidas = (TextView) findViewById(R.id.tvNVidas);
 
-        // Creamos la lista con los IV
-        ImageView[] listaIV = new ImageView[] {ivPuzzle1, ivPuzzle2, ivPuzzle3, ivPuzzle4,
-                ivPuzzle5, ivPuzzle6, ivPuzzle7, ivPuzzle8, ivPuzzle9, ivPuzzle10, ivPuzzle11,
-                ivPuzzle12};
+        // Creamos la lista con los IV y agregamos sus elementos
+        List<ImageView> listaIV = new ArrayList<ImageView>();
+        listaIV.add(ivPuzzle1);
+        listaIV.add(ivPuzzle2);
+        listaIV.add(ivPuzzle3);
+        listaIV.add(ivPuzzle4);
+        listaIV.add(ivPuzzle5);
+        listaIV.add(ivPuzzle6);
+        listaIV.add(ivPuzzle7);
+        listaIV.add(ivPuzzle8);
+        listaIV.add(ivPuzzle9);
+        listaIV.add(ivPuzzle10);
+        listaIV.add(ivPuzzle11);
+        listaIV.add(ivPuzzle12);
+
+        Collections.shuffle(listaIV);
 
         //  Creamos y asignamos a un IV un objeto carta
         int contadorPareja = 0;
 
-        for (int i = 0; i < listaIV.length; i++) {
+        for (int i = 0; i < listaIV.size(); i++) {
             if (i % 2 == 0) {
-                Carta c = new Carta(i, contadorPareja,listaImagenes[contadorPareja], listaIV[i]);
+                Carta c = new Carta(i, contadorPareja,listaImagenes[contadorPareja], listaIV.get(i));
                 listaCartas.add(c);
             } else {
-                Carta c = new Carta(i, contadorPareja,listaImagenes[contadorPareja], listaIV[i]);
+                Carta c = new Carta(i, contadorPareja,listaImagenes[contadorPareja], listaIV.get(i));
                 listaCartas.add(c);
                 contadorPareja++;
             }
