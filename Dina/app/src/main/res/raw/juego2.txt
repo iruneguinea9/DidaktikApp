@@ -1,0 +1,2 @@
+Orain, Arrantzaleen auzoa ezagutzen duzula, hurrengo jolasari ekingo diozu: argazki bikoteak. Argazkiak ikusteko 3 segundo izango dituzu eta behin denbora hori igarota argazki guztiak biratuko dira. Beraz, hasi bikoteak sortzen!
+
