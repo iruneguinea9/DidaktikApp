@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,6 +72,7 @@ public class Actividad2 extends AppCompatActivity {
         listaIV.add(ivPuzzle11);
         listaIV.add(ivPuzzle12);
 
+        //Mezclamos la lista
         Collections.shuffle(listaIV);
 
         //  Creamos y asignamos a un IV un objeto carta
@@ -92,25 +94,23 @@ public class Actividad2 extends AppCompatActivity {
             c.voltear();
         }
 
-        // Esperamos 3 segundos
-        try {
-            Thread.sleep(3000);
-
-        } catch (InterruptedException e) {
-
-        }
-
-        // Voltemoas todas las cartas durante 3 segundos
-        for (Carta c : listaCartas) {
-            c.ponerDorso();
-        }
+        // Creamos un hanler para hacer que espere 3 segundo antes de voltearlas
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                for (Carta c : listaCartas) {
+                    c.ponerDorso();
+                }
+            }
+        }, 3000);
     }
 
     private void finDelJuego(boolean ganar){
         if (ganar == true) {
             // Indormar al usuario de su victoria
-            Dialogo_gana_pieza_act3 d1 = new Dialogo_gana_pieza_act3();
+            Dialogo_gana_pieza_act2 d1 = new Dialogo_gana_pieza_act2();
             d1.show(getSupportFragmentManager(),"mensaje");
+            //TODO cargar la actividad mapa cuando este hecha
         } else {
             // Informar al usuario que ha perdido
             Dialogo_repetir_tarea d2 = new Dialogo_repetir_tarea();
@@ -190,11 +190,14 @@ public class Actividad2 extends AppCompatActivity {
                 voltear();
                 c.voltear();
 
-                Thread.sleep(1000);
-
-                // Volvemos a voltear las cartas
-                ponerDorso();
-                c.ponerDorso();
+                // Creamos un hanler para hacer que espere ocho decimas antes de poner el dorso
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    public void run() {
+                        ponerDorso();
+                        c.ponerDorso();
+                    }
+                }, 800);
 
                 //Ponemos a null la carta activa
                 cartaActiva = null;
