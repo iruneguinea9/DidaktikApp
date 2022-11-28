@@ -16,7 +16,7 @@ public class Dialogo_gana_pieza_act4 extends DialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.dialogo_gana_pieza_act3, null))
+        builder.setView(inflater.inflate(R.layout.dialogo_gana_pieza_act4, null))
                 .setPositiveButton("Jarraitu",
                         new DialogInterface.OnClickListener() {
                             @Override

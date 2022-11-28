@@ -20,11 +20,1201 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="match_parent"
-        android:layout_height="342dp"
-        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TableLayout
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c00"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c01"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c02"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c03"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c04"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c05"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c06"
+                android:layout_width="43dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/c08"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c07"
+                android:layout_width="37dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/c09"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c08"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c10"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c11"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c12"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c13"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c14"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c15"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c16"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c17"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c18"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c20"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c21"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c22"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c23"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c24"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c25"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c26"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c27"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c28"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c30"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c31"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c32"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c33"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c34"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c35"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c36"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c37"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c38"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c40"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c41"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c42"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c43"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c44"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c45"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c46"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c47"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c48"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c50"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c51"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c52"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c53"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c54"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c55"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c56"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c57"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c58"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c60"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c61"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c62"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c63"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c64"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c65"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c66"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c67"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c68"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c70"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c71"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c72"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c73"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c74"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c75"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c76"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c77"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c78"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c80"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c81"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c82"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c83"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c84"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c85"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c86"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c87"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c88"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c90"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c91"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c92"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c93"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c94"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c95"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c96"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c97"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c98"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c100"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c101"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c102"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c103"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c104"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c105"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c106"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c107"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cuadraditos_con_borde_crucigrama"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/c108"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/amarilloPrimario"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/itsasoS2"
+                tools:layout_editor_absoluteY="17dp" />
+        </TableRow>
+
+    </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
