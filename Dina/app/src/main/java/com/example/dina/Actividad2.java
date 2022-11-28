@@ -112,7 +112,7 @@ public class Actividad2 extends AppCompatActivity {
             d1.show(getSupportFragmentManager(),"mensaje");
             //TODO cargar la actividad mapa cuando este hecha
         } else {
-            // Informar al usuario que ha perdido
+            // Informar al usuario que ha perdido y le reiniciamos la actividad
             Dialogo_repetir_tarea d2 = new Dialogo_repetir_tarea();
             d2.show(getSupportFragmentManager(), "mensaje2");
             this.recreate();

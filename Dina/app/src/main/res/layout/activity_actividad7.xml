@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context=".Actividad7">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Galderak Jolasa"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="127dp"
+            android:layout_height="257dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/dina" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTextoAct7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zenbat neurtzen du traineru-estropadetan erabiltzen diren ontziak?"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/rgActividad7"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbRespuesta1Act7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12 metro" />
+
+                <RadioButton
+                    android:id="@+id/rbRespuesta2Act7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15 metro" />
+
+                <RadioButton
+                    android:id="@+id/rbRespuesta3Act7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17 metro" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
