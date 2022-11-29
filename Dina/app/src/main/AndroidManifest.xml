@@ -22,19 +22,32 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ExplicacionAct6"
+            android:name=".mapa"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Dialogo_gana_pieza_act6"
+            android:name=".ExplicacionAct6"
+
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity
+
+
+            android:name=".Dialogo_gana_pieza_act6"
+
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".ExplicacionAct7"
             android:exported="false">
