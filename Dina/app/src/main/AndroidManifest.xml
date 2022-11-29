@@ -84,6 +84,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".ExplicacionAct5"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Actividad4"
             android:exported="false">
             <meta-data

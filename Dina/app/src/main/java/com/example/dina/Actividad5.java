@@ -76,6 +76,7 @@ public class Actividad5 extends AppCompatActivity {
                                     palabras.put(palabra, true);
                                     palabra.setTextColor(getColor(R.color.amornico));
                                     palabraAcertada();
+                                    varificadorCompletado();
                                     resul.setText("");
                                 }
                             }
@@ -115,17 +116,22 @@ public class Actividad5 extends AppCompatActivity {
 
     private void cargarMapa() {
         palabras.put((TextView)findViewById(R.id.palabraSopa1), false);
-        palabras.put((TextView)findViewById(R.id.palabraSopa2), false);
-        palabras.put((TextView)findViewById(R.id.palabraSopa3), false);
-        palabras.put((TextView)findViewById(R.id.palabraSopa4), false);
-        palabras.put((TextView)findViewById(R.id.palabraSopa5), false);
-        palabras.put((TextView)findViewById(R.id.palabraSopa6), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa2), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa3), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa4), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa5), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa6), false);
 
 //        palabras.put((TextView)findViewById(R.id.palabraSopa8), false);
 //        palabras.put((TextView)findViewById(R.id.palabraSopa9), false);
     }
 
-
+    private void varificadorCompletado(){
+        if(!palabras.containsValue(false)){
+            Dialogo_gana_pieza_act5 d1 = new Dialogo_gana_pieza_act5();
+            d1.show(getSupportFragmentManager(),"mensaje");
+        }
+    }
 
 
 
