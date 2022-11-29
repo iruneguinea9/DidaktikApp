@@ -3,21 +3,25 @@ package com.example.dina;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Actividad5 extends AppCompatActivity {
 
-    private final HashMap<String, Boolean> palabras = new HashMap<String, Boolean>();
+    private final HashMap<TextView, Boolean> palabras = new HashMap<>();
+    private ArrayList <View> arrList = new ArrayList<>();
+    private ArrayList <View> arrListAcertadas = new ArrayList<>();
     private GridView gv;
     private TextView resul;
+    private Rect rectAntes = new Rect();
 
 
     private String[] letrasSopa = new String[]{
@@ -34,7 +38,7 @@ public class Actividad5 extends AppCompatActivity {
             "M","A","A","Y","P","J","H","F","N","M","F","C",
             "E","I","T","S","A","S","M","U","S","E","O","T"};
 
-    @SuppressLint("ClickableViewAccessibility")
+    @SuppressLint({"ClickableViewAccessibility", "ResourceAsColor"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,34 +51,39 @@ public class Actividad5 extends AppCompatActivity {
         gv.setAdapter(adaptador);
 
         final String[] anterior = {""};
+
+
+
         cargarMapa();
         gv.setOnTouchListener((view, motionEvent) -> {
             for(int i = 0; i < gv.getChildCount(); i++) {
                 View v = gv.getChildAt(i);
-                System.out.println("*-*--*-*-*-*-*-*-*-*-*-*");
-                System.out.println(gv.getChildAt(i));
-                System.out.println("*-*--*-*-*-*-*-*-*-*-*-*");
-                Rect outRecto = new Rect(v.getLeft(), v.getTop(), v.getRight(), v.getBottom());
-                Rect aa = new Rect(v.getLeft(), v.getTop(), v.getRight(), v.getBottom());
-                if(outRecto.contains((int)motionEvent.getX(), (int)motionEvent.getY())) {
-                    if(!((TextView) v).getText().equals(anterior[0])) {
+                Rect rectAhora = new Rect(v.getLeft(), v.getTop(), v.getRight(), v.getBottom());
+                if(rectAhora.contains((int)motionEvent.getX(), (int)motionEvent.getY())) {
+                    if(!rectAhora.equals(rectAntes)) {
+                        rectAntes = rectAhora;
+                        arrList.add(v);
                         resul.append(((TextView) v).getText());
-                        anterior[0] = (String) ((TextView) v).getText();
+                        v.setBackgroundColor(Color.RED);
                         boolean posible = false;
-                        for(String palabra : palabras.keySet()) {
-                            if(!palabras.get(palabra)) {
-                                if (palabra.toUpperCase().startsWith(resul.getText().toString())) {
+                        for (TextView palabra : palabras.keySet()) {
+                            if (!palabras.get(palabra)) {
+                                if (palabra.getText().toString().toUpperCase().startsWith(resul.getText().toString())) {
                                     posible = true;
                                 }
-                                if (palabra.toUpperCase().equals(resul.getText().toString())) {
+                                if (palabra.getText().toString().toUpperCase().equals(resul.getText().toString())) {
+                                    posible = true;
                                     palabras.put(palabra, true);
-                                   // comprobarMapa();
+                                    palabra.setTextColor(getColor(R.color.amornico));
+                                    palabraAcertada();
                                     resul.setText("");
                                 }
                             }
                         }
-                        if(!posible) {
+                        if (!posible) {
                             resul.setText("");
+                            limpiarSeleccionado();
+                            colorAcertado();
                         }
                     }
                 }
@@ -83,10 +92,37 @@ public class Actividad5 extends AppCompatActivity {
         });
     }
 
+    private void palabraAcertada(){
+        for (View x : arrList){
+            arrListAcertadas.add(x);
+        }
+        arrList.clear();
+        colorAcertado();
+    }
+
+    private void colorAcertado(){
+        for (View x : arrListAcertadas){
+            x.setBackgroundColor(getColor(R.color.amarilloPrimario));
+        }
+    }
+
+    private void limpiarSeleccionado(){
+        for (View x : arrList){
+            x.setBackgroundColor(getColor(R.color.blanco));
+        }
+        arrList.clear();
+    }
+
     private void cargarMapa() {
-        palabras.put("asjo", false);
-        palabras.put("eitsas", false);
-        palabras.put("arrantzale", false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa1), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa2), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa3), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa4), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa5), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa6), false);
+
+//        palabras.put((TextView)findViewById(R.id.palabraSopa8), false);
+//        palabras.put((TextView)findViewById(R.id.palabraSopa9), false);
     }
 
 
