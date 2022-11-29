@@ -110,7 +110,9 @@ public class Actividad2 extends AppCompatActivity {
             // Indormar al usuario de su victoria
             Dialogo_gana_pieza_act2 d1 = new Dialogo_gana_pieza_act2();
             d1.show(getSupportFragmentManager(),"mensaje");
-            //TODO cargar la actividad mapa cuando este hecha
+            // TODO cargar la actividad mapa cuando este hecha
+            // TODO agregar un puzle a la puntuacion
+
         } else {
             // Informar al usuario que ha perdido y le reiniciamos la actividad
             Dialogo_repetir_tarea d2 = new Dialogo_repetir_tarea();

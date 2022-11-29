@@ -18,8 +18,6 @@ public class Actividad7 extends AppCompatActivity {
 
     RadioButton rbRespuesta1Act7, rbRespuesta2Act7, rbRespuesta3Act7;
 
-    int etapa = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,9 +72,10 @@ public class Actividad7 extends AppCompatActivity {
 
                     case "Kirol-lehiaketarako":
                         // Indormar al usuario de su victoria
-                        Dialogo_gana_pieza_act2 d1 = new Dialogo_gana_pieza_act2();
+                        Dialogo_gana_pieza_act7 d1 = new Dialogo_gana_pieza_act7();
                         d1.show(getSupportFragmentManager(), "mensaje");
-                        //TODO cargar la actividad mapa cuando este hecha
+                        // TODO cargar la actividad mapa cuando este hecha
+                        // TODO agregar un puzle a la puntuacion
                         break;
 
                     // En el caso de default sera que se han equivocado y tendran que empezar el
@@ -102,8 +101,8 @@ public class Actividad7 extends AppCompatActivity {
     // Esta funcion se usa para deselecionar los RB debido al que el metodo clearCheck()
     // de RadioGroup no da errores
     private void limpiarSelecion() {
-        rbRespuesta1Act7.setSelected(false);
-        rbRespuesta2Act7.setSelected(false);;
-        rbRespuesta3Act7.setSelected(false);
+        rbRespuesta1Act7.setChecked(false);
+        rbRespuesta2Act7.setChecked(false);;
+        rbRespuesta3Act7.setChecked(false);
     }
 }

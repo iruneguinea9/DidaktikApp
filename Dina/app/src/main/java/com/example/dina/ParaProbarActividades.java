@@ -74,7 +74,7 @@ public class ParaProbarActividades extends AppCompatActivity {
         acti7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ParaProbarActividades.this, Actividad7.class);
+                Intent intent = new Intent(ParaProbarActividades.this, ExplicacionAct7.class);
                 startActivity(intent);
             }
         });
