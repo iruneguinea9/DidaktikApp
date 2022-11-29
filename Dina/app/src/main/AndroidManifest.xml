@@ -29,12 +29,7 @@
                 android:value="" />
         </activity>
         <activity
-<<<<<<< Updated upstream
-            android:name=".Actividad6"
-
-=======
             android:name=".Dialogo_gana_pieza_act6"
->>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

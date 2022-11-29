@@ -113,11 +113,12 @@ public class Actividad2 extends AppCompatActivity {
             Dialogo_gana_pieza_act2 d1 = new Dialogo_gana_pieza_act2();
             d1.show(getSupportFragmentManager(),"mensaje");
             // TODO cargar la actividad mapa cuando este hecha
-            // TODO agregar un puzle a la puntuacion
+
+            // Pasamos a True el la actividad en la base de datos
             HechosSQLiteHelper dinadbh =
                     new HechosSQLiteHelper(this, "DBDina", null, 1);
             ProgresoDao pd = new ProgresoDao();
-            pd.setTrue(dinadbh,"Juego 1");
+            pd.setTrue(dinadbh,"Juego 2");
             finish();
 
         } else {

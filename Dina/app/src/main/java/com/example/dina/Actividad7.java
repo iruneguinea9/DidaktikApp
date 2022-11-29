@@ -75,7 +75,14 @@ public class Actividad7 extends AppCompatActivity {
                         Dialogo_gana_pieza_act7 d1 = new Dialogo_gana_pieza_act7();
                         d1.show(getSupportFragmentManager(), "mensaje");
                         // TODO cargar la actividad mapa cuando este hecha
-                        // TODO agregar un puzle a la puntuacion
+
+                        // Pasamos a True el la actividad en la base de datos
+                        HechosSQLiteHelper dinadbh =
+                                new HechosSQLiteHelper(getBaseContext(), "DBDina", null, 1);
+                        ProgresoDao pd = new ProgresoDao();
+                        pd.setTrue(dinadbh,"Juego 7");
+                        finish();
+
                         break;
 
                     // En el caso de default sera que se han equivocado y tendran que empezar el

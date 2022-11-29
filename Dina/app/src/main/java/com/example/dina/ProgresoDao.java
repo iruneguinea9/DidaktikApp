@@ -5,8 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class ProgresoDao {
 
-
-
     public boolean crearBBDD(HechosSQLiteHelper dinadbh) {
 
         SQLiteDatabase db = dinadbh.getWritableDatabase();
