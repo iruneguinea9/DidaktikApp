@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -13,10 +14,15 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 public class ExplicacionAct4 extends AppCompatActivity {
     Button goazen;
     Switch volumen;
     TextView texto;
+    String explicacion;
     ImageView imagen;
     private MediaPlayer mediaPlayer;
     @Override
@@ -30,27 +36,8 @@ public class ExplicacionAct4 extends AppCompatActivity {
         goazen.setClickable(false);
         mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act4);
         mediaPlayer.start();
-        Handler handler = new Handler();
-        texto.setText("Gaur egungo Santurtziko portura iritsi gara behingoz! ");
-        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct4.this, R.anim.animaciontexto));
-
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                texto.setText("\n\n\nOlatu Talkaren eraikuntzak eta portu berriaren sorrerak eragin handia izan zuten Santurtziren eraldaketan. \nKostaldeko eremu batzuk desagertu ondoren, itsasoari irabazitako lursail horretan daude gaur egun Arrantzaleen Kofradia, Arrantza Portua, Parkea, Kiroldegia eta Victoria Erregina Itsas Pasealekua.\n");
-            }
-        }, 10000);
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                texto.setText("Portuak eta Arrantzaleen Kofradiak egunero egiten diete harrera sasoiko arrain freskoa deskargatzen duten arrantzaleei.");
-            }
-        }, 40000);
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                texto.setText("Santurtziko portuak, Arrantzaleen Kofradia berritua, El Hogar jatetxe tradizionala, Turismo Bulegoa eta enkante aretoa bere gain hartzen ditu. \nBertan, aldizka, arrain enkante antzeztuak antolatzen dira.");
-                texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct4.this, R.anim.animaciontexto));
-                goazen.setClickable(true);
-            }
-        }, 80000);
+        explicacion = leer();
+        texto.setText(explicacion);
         texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct4.this, R.anim.animaciontexto));
         goazen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +60,26 @@ public class ExplicacionAct4 extends AppCompatActivity {
             }
 
         });
+    }
+    public String leer(){
+        String texto ="";
+        try {
+            InputStream fraw = getResources().openRawResource(R.raw.explicacion4);
+            BufferedReader brin = new BufferedReader( new InputStreamReader(fraw));
+            String linea= brin.readLine();
+            texto +=linea;
+            while (linea!=null){
+                Log.i("Ficheros", linea);
+                linea=brin.readLine();
+                texto +=linea;
+            }
+            fraw.close();
+        }
+        catch (Exception ex) {
+            Log.e ("Ficheros", "Error al leer fichero desde recurso raw");
+        }
+
+        return texto;
     }
     @Override
     public void onBackPressed() {

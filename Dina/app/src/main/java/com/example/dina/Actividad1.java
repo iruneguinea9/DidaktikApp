@@ -5,12 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class Actividad1 extends AppCompatActivity {
     private final String[] respuestas = new String[] {"santurce","salla","deprisa","gritando","compra","sardinitas","ricas","yo"};
@@ -41,7 +46,7 @@ public class Actividad1 extends AppCompatActivity {
         restart = findViewById(R.id.botonRestart);
         explicacion = findViewById(R.id.explicacion);
         imagen = findViewById(R.id.imagen);
-        explicacion.setText("Gustukoa izan duzu? Hori espero. Izan ere, jarduera honetan Sardina Saltzaileen abesti famatuaren letra agertzen zaizu, baina kontuz! Abestiak hainbat hutsune ditu eta zure lana, hutsuneak betetzea izango da.");
+        explicacion.setText(leer());
 
         mediaPlayer = MediaPlayer.create(this, R.raw.cancion_act1);
         egiaztatu.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +65,8 @@ public class Actividad1 extends AppCompatActivity {
                     }, 10000);
 
                     // añadir una pieza de puzzle
+                    ProgresoDao pd = new ProgresoDao();
+                    pd.setTrue("Juego 1");
                 }
                 else{
                     // mal, vuelve a empezar
@@ -134,5 +141,25 @@ public class Actividad1 extends AppCompatActivity {
         gap6.setText("");
         gap7.setText("");
         gap8.setText("");
+    }
+    public String leer(){
+        String texto ="";
+        try {
+            InputStream fraw = getResources().openRawResource(R.raw.juego1);
+            BufferedReader brin = new BufferedReader( new InputStreamReader(fraw));
+            String linea= brin.readLine();
+            texto +=linea;
+            while (linea!=null){
+                Log.i("Ficheros", linea);
+                linea=brin.readLine();
+                texto +=linea;
+            }
+            fraw.close();
+        }
+        catch (Exception ex) {
+            Log.e ("Ficheros", "Error al leer fichero desde recurso raw");
+        }
+
+        return texto;
     }
 }

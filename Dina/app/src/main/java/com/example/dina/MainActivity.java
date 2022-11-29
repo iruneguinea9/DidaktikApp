@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ProgresoDao pd = new ProgresoDao();
         hasi = findViewById(R.id.hasi);
         jarraitu = findViewById(R.id.jarraitu);
         pruebas = findViewById(R.id.pruebas);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         hasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                pd.crearBBDD();
             }
 
         });

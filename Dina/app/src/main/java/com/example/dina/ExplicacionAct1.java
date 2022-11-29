@@ -35,7 +35,7 @@ public class ExplicacionAct1 extends AppCompatActivity {
         imagen = findViewById(R.id.imagenquecambia);
         volumen = findViewById(R.id.volumen);
         imagen.setVisibility(View.INVISIBLE);
-        goazen.setClickable(false);
+
         mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act1);
         mediaPlayer.start();
         explicacion = leer();
@@ -57,7 +57,7 @@ public class ExplicacionAct1 extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             public void run() {
                 imagen.setImageDrawable(getDrawable(R.drawable.gune1_1));
-                goazen.setClickable(true);
+
             }
         }, 80000);
 
