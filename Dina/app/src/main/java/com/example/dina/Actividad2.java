@@ -72,6 +72,8 @@ public class Actividad2 extends AppCompatActivity {
         listaIV.add(ivPuzzle11);
         listaIV.add(ivPuzzle12);
 
+
+
         //Mezclamos la lista
         Collections.shuffle(listaIV);
 
@@ -112,6 +114,11 @@ public class Actividad2 extends AppCompatActivity {
             d1.show(getSupportFragmentManager(),"mensaje");
             // TODO cargar la actividad mapa cuando este hecha
             // TODO agregar un puzle a la puntuacion
+            HechosSQLiteHelper dinadbh =
+                    new HechosSQLiteHelper(this, "DBDina", null, 1);
+            ProgresoDao pd = new ProgresoDao();
+            pd.setTrue(dinadbh,"Juego 1");
+            finish();
 
         } else {
             // Informar al usuario que ha perdido y le reiniciamos la actividad

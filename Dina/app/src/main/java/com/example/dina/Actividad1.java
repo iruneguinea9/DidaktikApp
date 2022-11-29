@@ -47,7 +47,8 @@ public class Actividad1 extends AppCompatActivity {
         explicacion = findViewById(R.id.explicacion);
         imagen = findViewById(R.id.imagen);
         explicacion.setText(leer());
-
+        HechosSQLiteHelper dinadbh =
+                new HechosSQLiteHelper(this, "DBDina", null, 1);
         mediaPlayer = MediaPlayer.create(this, R.raw.cancion_act1);
         egiaztatu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,13 +61,12 @@ public class Actividad1 extends AppCompatActivity {
                     handler.postDelayed(new Runnable() {
                         public void run() {
                             mediaPlayer.stop();
+                            // añadir una pieza de puzzle
+                            ProgresoDao pd = new ProgresoDao();
+                            pd.setTrue(dinadbh,"Juego 1");
                             finish();
                         }
                     }, 10000);
-
-                    // añadir una pieza de puzzle
-                    ProgresoDao pd = new ProgresoDao();
-                    pd.setTrue("Juego 1");
                 }
                 else{
                     // mal, vuelve a empezar

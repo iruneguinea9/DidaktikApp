@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private Button hasi,jarraitu,pruebas;
+    private int piezasConseguidas;
     ImageButton creditos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +22,19 @@ public class MainActivity extends AppCompatActivity {
         jarraitu = findViewById(R.id.jarraitu);
         pruebas = findViewById(R.id.pruebas);
         creditos = findViewById(R.id.creditos);
-
+        HechosSQLiteHelper dinadbh =
+                new HechosSQLiteHelper(this, "DBDina", null, 1);
         hasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pd.crearBBDD();
+                pd.juegoNuevo(dinadbh);
             }
 
         });
         jarraitu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                piezasConseguidas = pd.cuantosJuegosHechos(dinadbh);
             }
         });
         pruebas.setOnClickListener(new View.OnClickListener() {

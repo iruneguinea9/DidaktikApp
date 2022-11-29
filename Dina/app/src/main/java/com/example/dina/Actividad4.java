@@ -25,7 +25,8 @@ public class Actividad4 extends AppCompatActivity {
     TextView s6,n6,u6,t6,i6; //santurtzi
     int cualBoton;
     int cont = 0;
-
+    HechosSQLiteHelper dinadbh =
+            new HechosSQLiteHelper(this, "DBDina", null, 1);
 
 
     @Override
@@ -266,6 +267,8 @@ public class Actividad4 extends AppCompatActivity {
         // la ha hecho bien, le damos una pieza
         Dialogo_gana_pieza_act4 d4 = new Dialogo_gana_pieza_act4();
         d4.show(getSupportFragmentManager(),"mensaje");
+        ProgresoDao pd = new ProgresoDao();
+        pd.setTrue(dinadbh,"Juego 4");
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {

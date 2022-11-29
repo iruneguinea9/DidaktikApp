@@ -3,36 +3,33 @@ package com.example.dina;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class ProgresoDao {
 
-public class ProgresoDao extends AppCompatActivity {
 
-    private HechosSQLiteHelper dinadbh =
-            new HechosSQLiteHelper(this, "DBDina", null, 1);
 
-    public boolean crearBBDD() {
+    public boolean crearBBDD(HechosSQLiteHelper dinadbh) {
 
         SQLiteDatabase db = dinadbh.getWritableDatabase();
         if (db != null){
             for (int i =1; i<=7; i++){
                 String nombre ="Juego "+i;
                 db.execSQL("INSERT INTO Progreso (juego, hecho)" +
-                        " VALUES (nombre,'false') ");
+                        " VALUES ('"+nombre+"','false') ");
             }
         }
         db.close();
         return true;
     }
 
-    public void setTrue(String nombre){
+    public void setTrue(HechosSQLiteHelper dinadbh, String nombre){
         SQLiteDatabase db = dinadbh.getWritableDatabase();
         if (db != null) {
-            db.execSQL("UPDATE Progreso SET hecho='true' WHERE juego=" + nombre);
+            db.execSQL("UPDATE Progreso SET hecho='true' WHERE juego='" + nombre+"'");
         }
         db.close();
     }
 
-    public void juegoNuevo(){
+    public void juegoNuevo(HechosSQLiteHelper dinadbh){
         SQLiteDatabase db = dinadbh.getWritableDatabase();
         if(db != null) {
             db.execSQL("UPDATE Progreso SET hecho='false'");
@@ -40,13 +37,14 @@ public class ProgresoDao extends AppCompatActivity {
         db.close();
     }
 
-    public int cuantosJuegosHechos(){
+    public int cuantosJuegosHechos(HechosSQLiteHelper dinadbh){
         int cuantos = 0;
-        SQLiteDatabase db = dinadbh.getWritableDatabase();
+        SQLiteDatabase db = dinadbh.getReadableDatabase();
         if(db != null) {
             Cursor c = db.rawQuery("SELECT juego FROM Progreso " +
                     "WHERE hecho = 'true'", null);
             cuantos = c.getCount();
+            c.close();
         }
         db.close();
         return cuantos;

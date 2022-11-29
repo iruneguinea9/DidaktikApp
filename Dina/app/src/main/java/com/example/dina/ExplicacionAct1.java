@@ -35,7 +35,6 @@ public class ExplicacionAct1 extends AppCompatActivity {
         imagen = findViewById(R.id.imagenquecambia);
         volumen = findViewById(R.id.volumen);
         imagen.setVisibility(View.INVISIBLE);
-
         mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act1);
         mediaPlayer.start();
         explicacion = leer();
@@ -70,6 +69,15 @@ public class ExplicacionAct1 extends AppCompatActivity {
                     mediaPlayer.setVolume(0,0);
             }
 
+        });
+        goazen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.stop();
+                Intent intent = new Intent(ExplicacionAct1.this, Actividad1.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
     @Override
