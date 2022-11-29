@@ -6,18 +6,23 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class ExplicacionAct2 extends AppCompatActivity {
     Button goazen;
     Switch volumen;
     TextView texto;
     ImageView imagen;
+    String explicacion;
     private MediaPlayer mediaPlayer;
 
     @Override
@@ -31,11 +36,21 @@ public class ExplicacionAct2 extends AppCompatActivity {
         imagen = findViewById(R.id.imagenquecambia);
         volumen = findViewById(R.id.volumen);
 
-        // Ponemos
-        goazen.setClickable(false);
+        // Ponermos la foto imvisible para le principio
+        imagen.setVisibility(View.INVISIBLE);
+        // TODO descomentar en version final
+        //goazen.setClickable(false);
 
+        // Iniciamos el Audio
         mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act2);
         mediaPlayer.start();
+
+        // Ejecutamos la funcion de leer para cargar le texto
+        explicacion = leer();
+
+        // Le pasamos el texto al tf
+        texto.setText(explicacion);
+        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct2.this, R.anim.animaciontexto));
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -43,25 +58,25 @@ public class ExplicacionAct2 extends AppCompatActivity {
                 imagen.setVisibility(View.VISIBLE);
             }
         }, 15000);
-        texto.setText("Bigarren kokalekuan gaude: Arrantzaleen auzoan. Arrantzaleen auzoa Mamarigan dago. Etxe hauek arrantzale eta sardina-saltzaileentzat pentsatuak izan ziren. Etxe ohikoenak bi edo hiru solairu zituzten, behekoa tresna-biltegirako erabiltzen zen; beste biak, berriz, etxebizitzarako. \n");
-
-        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct2.this, R.anim.animaciontexto));
 
         handler.postDelayed(new Runnable() {
             public void run() {
-                texto.setText("Etxe hauetan arrantzaleak eta sardina-saltzaileak bizi ziren. Arrantzaleak itsasora joaten ziren arrantzara, batzuetan orduak bakarrik ematen zituzten itsasoan, baina beste askotan egunak. Sardina-saltzaileak itxaroten geratzen ziren, arrantzaleak noiz bueltatzen ziren ikusteko eta haien bila joateko. Horregatik, etxeak hemen eraiki ziren, hemendik itsasoa primeran ikusten delako.\n");
-
+                goazen.setClickable(true);
             }
-        }, 10000);
-        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct2.this, R.anim.animaciontexto));
+        }, 40000);
 
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                texto.setText("Orain, Arrantzaleen auzoa ezagutzen duzula, hurrengo jolasari ekingo diozu: argazki bikoteak. Argazkiak ikusteko 3 segundo izango dituzu eta behin denbora hori igarota argazki guztiak biratuko dira. Beraz, hasi bikoteak sortzen!\n");
+        // Boton para quitar el volumen
+        volumen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (volumen.isChecked())
+                    mediaPlayer.setVolume(1,1);
+                else
+                    mediaPlayer.setVolume(0,0);
             }
-        }, 12000);
-        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct2.this, R.anim.animaciontexto));
+        });
 
+        //Bonton para iniciar la actividad
         goazen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,22 +88,32 @@ public class ExplicacionAct2 extends AppCompatActivity {
                 finish();
             }
         });
-
-        volumen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (volumen.isChecked())
-                    mediaPlayer.setVolume(1,1);
-                else
-                    mediaPlayer.setVolume(0,0);
-            }
-
-        });
     }
 
     @Override
     public void onBackPressed() {
         mediaPlayer.stop();
         finish();
+    }
+
+    public String leer(){
+        String texto ="";
+        try {
+            InputStream fraw = getResources().openRawResource(R.raw.explicacion2);
+            BufferedReader brin = new BufferedReader( new InputStreamReader(fraw));
+            String linea = brin.readLine();
+            texto += linea;
+            while (linea!=null){
+                Log.i("Ficheros", linea);
+                linea=brin.readLine();
+                texto += linea;
+            }
+            fraw.close();
+        }
+        catch (Exception ex) {
+            Log.e ("Ficheros", "Error al leer fichero desde recurso raw");
+        }
+
+        return texto;
     }
 }
