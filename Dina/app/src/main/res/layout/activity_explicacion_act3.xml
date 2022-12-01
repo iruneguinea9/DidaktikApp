@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="247dp"
                 android:layout_marginTop="10sp"
-                app:srcCompat="@drawable/gune5_1" />
+                app:srcCompat="@drawable/gune3_1" />
         </LinearLayout>
 
     </LinearLayout>

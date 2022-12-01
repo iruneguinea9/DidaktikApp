@@ -18,7 +18,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class ExplicacionAct5 extends AppCompatActivity {
+public class ExplicacionAct3 extends AppCompatActivity {
     Button goazen;
     Switch volumen;
     TextView texto;
@@ -28,30 +28,23 @@ public class ExplicacionAct5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_explicacion_act5);
+        setContentView(R.layout.activity_explicacion_act3);
         goazen = findViewById(R.id.botonGoazen);
         texto = findViewById(R.id.texto);
         imagen = findViewById(R.id.imagenquecambia);
         volumen = findViewById(R.id.volumen);
         imagen.setVisibility(View.INVISIBLE);
-        mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act5);
+        mediaPlayer = MediaPlayer.create(this, R.raw.explicacion_act3);
         mediaPlayer.start();
         explicacion = leer();
         texto.setText(explicacion);
-        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct5.this, R.anim.animaciontexto));
+        texto.startAnimation(AnimationUtils.loadAnimation(ExplicacionAct3.this, R.anim.animaciontexto));
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
                 imagen.setVisibility(View.VISIBLE);
             }
         }, 5500);
-
-
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                imagen.setImageDrawable(getDrawable(R.drawable.gune5_2));
-            }
-        }, 45000);
 
         volumen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +60,7 @@ public class ExplicacionAct5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mediaPlayer.stop();
-                Intent intent = new Intent(ExplicacionAct5.this, Actividad5.class);
+                Intent intent = new Intent(ExplicacionAct3.this, Actividad5.class);
                 startActivity(intent);
                 finish();
             }
