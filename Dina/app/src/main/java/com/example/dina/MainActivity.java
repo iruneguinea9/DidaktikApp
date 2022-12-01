@@ -28,13 +28,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 pd.juegoNuevo(dinadbh);
+                Intent intent = new Intent(MainActivity.this, mapa.class);
+                startActivity(intent);
             }
 
         });
         jarraitu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                piezasConseguidas = pd.cuantosJuegosHechos(dinadbh);
+                Intent intent = new Intent(MainActivity.this, mapa.class);
+                startActivity(intent);
             }
         });
         pruebas.setOnClickListener(new View.OnClickListener() {

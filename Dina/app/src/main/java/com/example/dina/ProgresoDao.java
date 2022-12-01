@@ -45,6 +45,7 @@ public class ProgresoDao {
             c.close();
         }
         db.close();
+        System.out.println(cuantos+"");
         return cuantos;
     }
 }
