@@ -15,6 +15,13 @@
         android:theme="@style/Theme.Dina"
         tools:targetApi="31">
         <activity
+            android:name=".Puzzle"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Actividad6"
             android:exported="false">
             <meta-data
@@ -30,24 +37,18 @@
         </activity>
         <activity
             android:name=".ExplicacionAct6"
-
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
-
-
             android:name=".Dialogo_gana_pieza_act6"
-
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".ExplicacionAct7"
             android:exported="false">
