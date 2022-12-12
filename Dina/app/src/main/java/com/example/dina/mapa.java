@@ -147,7 +147,34 @@ public class mapa extends AppCompatActivity  implements OnMapReadyCallback {
                 //marker.hideInfoWindow(); //Ocultar info marcador
                 Toast.makeText(mapa.this, "Marcador Pulsado:\n" + marker.getTitle(), Toast.LENGTH_SHORT).show();
                 mapa.getUiSettings();
-
+                if(marker.getTitle().equals("Sardina saltzaileen omenerako monumentua")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct1.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Arrantzaleen auzoa")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct2.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Arrantzatzen duen haurraren eskultura")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct3.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Sarturtziko portua")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct4.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Arrantzaleen Kofradia edo Arraina saltzeko etxea")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct5.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Karmengo Ama Birjina")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct6.class);
+                    startActivity(intent);
+                }
+                if(marker.getTitle().equals("Itsasoko ama: Arraun kluba")){
+                    Intent intent = new Intent(mapa.this, ExplicacionAct7.class);
+                    startActivity(intent);
+                }
                 return true;
             }
         });
