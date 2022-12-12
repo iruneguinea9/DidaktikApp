@@ -60,7 +60,7 @@ public class ExplicacionAct3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mediaPlayer.stop();
-                Intent intent = new Intent(ExplicacionAct3.this, Actividad5.class);
+                Intent intent = new Intent(ExplicacionAct3.this, Actividad3.class);
                 startActivity(intent);
                 finish();
             }
