@@ -2,6 +2,7 @@ package com.example.dina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -272,8 +273,10 @@ public class Actividad4 extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                finish();
+                Intent intent = new Intent(Actividad4.this, mapa.class);
+                startActivity(intent);
+                finish();;
             }
-        }, 10000);
+        }, 8000);
     }
 }

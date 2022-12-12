@@ -65,9 +65,11 @@ public class Actividad1 extends AppCompatActivity {
                             // añadir una pieza de puzzle
                             ProgresoDao pd = new ProgresoDao();
                             pd.setTrue(dinadbh,"Juego 1");
+                            Intent intent = new Intent(Actividad1.this, mapa.class);
+                            startActivity(intent);
                             finish();
                         }
-                    }, 10000);
+                    }, 8000);
                 }
                 else{
                     // mal, vuelve a empezar

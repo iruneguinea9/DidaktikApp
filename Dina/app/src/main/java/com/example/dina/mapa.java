@@ -56,7 +56,6 @@ public class mapa extends AppCompatActivity  implements OnMapReadyCallback {
                 startActivity(intent);
             }
         });
-
     }
 
     private void obtenerPosicion () {
@@ -132,10 +131,7 @@ public class mapa extends AppCompatActivity  implements OnMapReadyCallback {
                 Projection proj = mapa.getProjection();
                 Point coord = proj.toScreenLocation(latLng);
 
-                Toast.makeText(mapa.this, "Click " +
-                                "\nLatitud: " + latLng.latitude +
-                                "\nLongitud: " + latLng.longitude +
-                                "\nX: " + coord.x + " - Y: " + coord.y,
+                Toast.makeText(mapa.this, "Mesedez, klik egin hurrengo posizioan",
                         Toast.LENGTH_SHORT).show();
             }
         });

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -119,7 +120,14 @@ public class Actividad2 extends AppCompatActivity {
                     new HechosSQLiteHelper(this, "DBDina", null, 1);
             ProgresoDao pd = new ProgresoDao();
             pd.setTrue(dinadbh,"Juego 2");
-            finish();
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    Intent intent = new Intent(Actividad2.this, mapa.class);
+                    startActivity(intent);
+                    finish();;
+                }
+            }, 8000);
 
         } else {
             // Informar al usuario que ha perdido y le reiniciamos la actividad

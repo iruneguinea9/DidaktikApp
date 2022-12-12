@@ -3,9 +3,11 @@ package com.example.dina;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
@@ -130,6 +132,14 @@ public class Actividad5 extends AppCompatActivity {
         if(!palabras.containsValue(false)){
             Dialogo_gana_pieza_act5 d1 = new Dialogo_gana_pieza_act5();
             d1.show(getSupportFragmentManager(),"mensaje");
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    Intent intent = new Intent(Actividad5.this, mapa.class);
+                    startActivity(intent);
+                    finish();;
+                }
+            }, 8000);
         }
     }
 

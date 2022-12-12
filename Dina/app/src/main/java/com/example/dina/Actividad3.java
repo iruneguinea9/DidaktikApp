@@ -2,7 +2,9 @@ package com.example.dina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -21,6 +23,14 @@ public class Actividad3 extends AppCompatActivity {
             // la ha hecho bien, le damos una pieza
             Dialogo_gana_pieza_act3 d1 = new Dialogo_gana_pieza_act3();
             d1.show(getSupportFragmentManager(),"mensaje");
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    Intent intent = new Intent(Actividad3.this, mapa.class);
+                    startActivity(intent);
+                    finish();;
+                }
+            }, 8000);
         }
         else {
             // mal, vuelve a empezar
