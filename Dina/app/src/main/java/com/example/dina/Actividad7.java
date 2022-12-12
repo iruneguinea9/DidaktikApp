@@ -2,7 +2,9 @@ package com.example.dina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -73,7 +75,7 @@ public class Actividad7 extends AppCompatActivity {
                     case "Kirol-lehiaketarako":
                         // Indormar al usuario de su victoria
                         Dialogo_gana_pieza_act7 d1 = new Dialogo_gana_pieza_act7();
-                        d1.show(getSupportFragmentManager(), "mensaje");
+                        d1.show(getSupportFragmentManager(),"mensaje");
                         // TODO cargar la actividad mapa cuando este hecha
 
                         // Pasamos a True el la actividad en la base de datos
@@ -81,8 +83,14 @@ public class Actividad7 extends AppCompatActivity {
                                 new HechosSQLiteHelper(getBaseContext(), "DBDina", null, 1);
                         ProgresoDao pd = new ProgresoDao();
                         pd.setTrue(dinadbh,"Juego 7");
-                        finish();
-
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            public void run() {
+                                Intent intent = new Intent(Actividad7.this, mapa.class);
+                                startActivity(intent);
+                                finish();;
+                            }
+                        }, 8000);
                         break;
 
                     // En el caso de default sera que se han equivocado y tendran que empezar el
