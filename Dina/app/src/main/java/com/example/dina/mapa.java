@@ -141,7 +141,6 @@ public class mapa extends AppCompatActivity  implements OnMapReadyCallback {
             public boolean onMarkerClick(Marker marker) {
                 marker.showInfoWindow();//Visualizar info marcador
                 //marker.hideInfoWindow(); //Ocultar info marcador
-                Toast.makeText(mapa.this, "Marcador Pulsado:\n" + marker.getTitle(), Toast.LENGTH_SHORT).show();
                 mapa.getUiSettings();
                 if(marker.getTitle().equals("Sardina saltzaileen omenerako monumentua")){
                     Intent intent = new Intent(mapa.this, ExplicacionAct1.class);
