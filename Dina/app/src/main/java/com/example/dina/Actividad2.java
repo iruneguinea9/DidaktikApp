@@ -30,7 +30,7 @@ public class Actividad2 extends AppCompatActivity {
     private int puntuacion = 0;
     private Carta cartaActiva;
 
-    private String[] listaImagenes = new String[] {"juegodeparejas1", "gune2_1", "juegodeparejas3",
+    private String[] listaImagenes = new String[] {"juegodeparejas1", "juegodeparejas2", "juegodeparejas3",
             "juegodeparejas4", "juegodeparejas5", "juegodeparejas6"};
 
 
@@ -163,7 +163,7 @@ public class Actividad2 extends AppCompatActivity {
     }
 
     private class Carta {
-        final String dorso = "piezapuzle20x20escala10";
+        final String dorso = "dorso";
         private String cara;
         private int id, idPareja;
         private ImageView ivPuzzle;
