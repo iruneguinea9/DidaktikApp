@@ -31,6 +31,7 @@ public class Actividad1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad1);
+        // dialogo explicacion inicial
         Dialogo_explicacion_act1 d = new Dialogo_explicacion_act1();
         d.show(getSupportFragmentManager(),"mensaje");
         // asignar id
@@ -49,8 +50,12 @@ public class Actividad1 extends AppCompatActivity {
         explicacion = findViewById(R.id.explicacion);
         imagen = findViewById(R.id.imagen);
         explicacion.setText(leer());
+
+        // Conexion con base de datos
         HechosSQLiteHelper dinadbh =
                 new HechosSQLiteHelper(this, "DBDina", null, 1);
+
+        // cancion
         mediaPlayer = MediaPlayer.create(this, R.raw.cancion_act1);
         egiaztatu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +87,8 @@ public class Actividad1 extends AppCompatActivity {
             }
 
         });
+
+        // controles de audio
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -146,6 +153,8 @@ public class Actividad1 extends AppCompatActivity {
         gap7.setText("");
         gap8.setText("");
     }
+
+    // para leer de los ficheros
     public String leer(){
         String texto ="";
         try {

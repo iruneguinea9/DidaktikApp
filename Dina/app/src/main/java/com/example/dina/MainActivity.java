@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         creditos = findViewById(R.id.creditos);
         HechosSQLiteHelper dinadbh =
                 new HechosSQLiteHelper(this, "DBDina", null, 1);
-        pd.crearBBDD(dinadbh);
+        //pd.crearBBDD(dinadbh);
         hasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
