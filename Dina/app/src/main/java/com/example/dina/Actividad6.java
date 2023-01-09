@@ -21,7 +21,8 @@ public class Actividad6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad6);
-
+        Dialogo_explicacion_act6 d = new Dialogo_explicacion_act6();
+        d.show(getSupportFragmentManager(),"mensaje");
         tvAciertos = (TextView) findViewById(R.id.tvAciertos);
 
         tvAciertos.setText(aciertos+"/7 Diferencias Econtradas");

@@ -34,6 +34,8 @@ public class Actividad4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad4);
+        Dialogo_explicacion_act4 d = new Dialogo_explicacion_act4();
+        d.show(getSupportFragmentManager(),"mensaje");
         //ids
         respuesta = findViewById(R.id.respuestaTxt);
         comprobar = findViewById(R.id.checkBtn);

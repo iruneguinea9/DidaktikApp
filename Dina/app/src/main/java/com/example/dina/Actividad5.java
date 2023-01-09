@@ -45,7 +45,8 @@ public class Actividad5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad5);
-
+        Dialogo_explicacion_act5 d = new Dialogo_explicacion_act5();
+        d.show(getSupportFragmentManager(),"mensaje");
         gv = (GridView)findViewById(R.id.gv);
         resul = findViewById(R.id.tvResultadoSopa);
 

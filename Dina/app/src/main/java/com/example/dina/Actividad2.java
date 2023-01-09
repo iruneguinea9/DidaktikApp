@@ -40,7 +40,8 @@ public class Actividad2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad2);
-
+        Dialogo_explicacion_act2 d = new Dialogo_explicacion_act2();
+        d.show(getSupportFragmentManager(),"mensaje");
         // Declaramos todas las relaciones de las ImageView
         ivPuzzle1 = (ImageView) findViewById(R.id.ivPuzzle1);
         ivPuzzle2 = (ImageView) findViewById(R.id.ivPuzzle2);

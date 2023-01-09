@@ -15,7 +15,8 @@ public class Actividad3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad3);
-
+        Dialogo_explicacion_act3 d = new Dialogo_explicacion_act3();
+        d.show(getSupportFragmentManager(),"mensaje");
     }
 
     public void validacion(View view){

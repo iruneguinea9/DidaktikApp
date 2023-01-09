@@ -31,7 +31,8 @@ public class Actividad1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad1);
-
+        Dialogo_explicacion_act1 d = new Dialogo_explicacion_act1();
+        d.show(getSupportFragmentManager(),"mensaje");
         // asignar id
         egiaztatu = findViewById(R.id.egiaztatu);
         gap1 = findViewById(R.id.gap1);

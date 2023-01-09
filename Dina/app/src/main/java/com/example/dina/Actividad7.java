@@ -24,7 +24,8 @@ public class Actividad7 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad7);
-
+        Dialogo_explicacion_act7 d = new Dialogo_explicacion_act7();
+        d.show(getSupportFragmentManager(),"mensaje");
         // Declaramos todas las relaciones de las ImageView
         tvTextoAct7 = (TextView) findViewById(R.id.tvTextoAct7);
         rgActividad7 = (RadioGroup) findViewById(R.id.rgActividad7);
