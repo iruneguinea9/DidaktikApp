@@ -180,6 +180,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".ExplicacionAct3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Actividad2"
             android:exported="false">
             <meta-data

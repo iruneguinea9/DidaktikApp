@@ -49,7 +49,6 @@ public class Actividad5 extends AppCompatActivity {
         d.show(getSupportFragmentManager(),"mensaje");
         gv = (GridView)findViewById(R.id.gv);
         resul = findViewById(R.id.tvResultadoSopa);
-
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, R.layout.activity_actividad5_textview, letrasSopa);
         gv.setAdapter(adaptador);
 
@@ -119,11 +118,11 @@ public class Actividad5 extends AppCompatActivity {
 
     private void cargarMapa() {
         palabras.put((TextView)findViewById(R.id.palabraSopa1), false);
-//        palabras.put((TextView)findViewById(R.id.palabraSopa2), false);
-//        palabras.put((TextView)findViewById(R.id.palabraSopa3), false);
-//        palabras.put((TextView)findViewById(R.id.palabraSopa4), false);
-//        palabras.put((TextView)findViewById(R.id.palabraSopa5), false);
-//        palabras.put((TextView)findViewById(R.id.palabraSopa6), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa2), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa3), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa4), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa5), false);
+        palabras.put((TextView)findViewById(R.id.palabraSopa6), false);
 
 //        palabras.put((TextView)findViewById(R.id.palabraSopa8), false);
 //        palabras.put((TextView)findViewById(R.id.palabraSopa9), false);
