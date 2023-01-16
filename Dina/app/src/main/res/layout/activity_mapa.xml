@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="0dp"
     tools:context=".mapa">
 
     <fragment
@@ -11,7 +12,14 @@
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-         />
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/fondoburbuja">
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,9 +54,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:layout_weight="0.03"
-                android:background="@color/amarilloPrimario"
+                android:shadowColor="@color/amarilloPrimario"
                 android:text="0"
                 android:textAlignment="textEnd"
+                android:textColor="@color/amarilloPrimario"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -58,9 +67,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:layout_weight="0.05"
-                android:background="@color/amarilloPrimario"
+                android:shadowColor="@color/amarilloPrimario"
                 android:text="/ 7"
                 android:textAlignment="center"
+                android:textColor="@color/amarilloPrimario"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -79,4 +89,5 @@
         android:layout_marginBottom="25dp"
         android:text="Puzzlea egin"
         tools:visibility="gone" />
+
 </RelativeLayout>
