@@ -24,9 +24,6 @@ public class Actividad1 extends AppCompatActivity {
     private EditText gap1,gap2,gap3,gap4,gap5,gap6,gap7,gap8;
     private ImageButton play,pause,restart;
     private MediaPlayer mediaPlayer;
-    private ImageView imagen;
-    private TextView explicacion;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,9 +44,6 @@ public class Actividad1 extends AppCompatActivity {
         play = findViewById(R.id.botonPlay);
         pause = findViewById(R.id.botonPause);
         restart = findViewById(R.id.botonRestart);
-        explicacion = findViewById(R.id.explicacion);
-        imagen = findViewById(R.id.imagen);
-        explicacion.setText(leer());
 
         // Conexion con base de datos
         HechosSQLiteHelper dinadbh =
@@ -154,25 +148,4 @@ public class Actividad1 extends AppCompatActivity {
         gap8.setText("");
     }
 
-    // para leer de los ficheros
-    public String leer(){
-        String texto ="";
-        try {
-            InputStream fraw = getResources().openRawResource(R.raw.juego1);
-            BufferedReader brin = new BufferedReader( new InputStreamReader(fraw));
-            String linea= brin.readLine();
-            texto +=linea;
-            while (linea!=null){
-                Log.i("Ficheros", linea);
-                linea=brin.readLine();
-                texto +=linea;
-            }
-            fraw.close();
-        }
-        catch (Exception ex) {
-            Log.e ("Ficheros", "Error al leer fichero desde recurso raw");
-        }
-
-        return texto;
-    }
 }

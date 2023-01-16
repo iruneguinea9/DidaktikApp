@@ -25,7 +25,7 @@ public class Actividad6 extends AppCompatActivity {
         d.show(getSupportFragmentManager(),"mensaje");
         tvAciertos = (TextView) findViewById(R.id.tvAciertos);
 
-        tvAciertos.setText(aciertos+"/7 Diferencias Econtradas");
+        tvAciertos.setText(aciertos+"/7 desberdintasun aurkituta");
     }
 
     public void acierto(View view) {
@@ -35,7 +35,7 @@ public class Actividad6 extends AppCompatActivity {
 
         aciertos++;
 
-        tvAciertos.setText(aciertos+"/7 Diferencias Econtradas");
+        tvAciertos.setText(aciertos+"/7 desberdintasun aurkituta");
 
         if (aciertos == 7) {
             ganar();
