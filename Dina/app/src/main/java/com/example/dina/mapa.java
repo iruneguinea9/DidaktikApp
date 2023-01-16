@@ -35,7 +35,7 @@ public class mapa extends AppCompatActivity  implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
         //ids
 
-        puzzlefinal = findViewById(R.id.puzzleBtn);
+        puzzlefinal = findViewById(R.id.puzzleFinal);
         contador = findViewById(R.id.contadorPuzzle);
         puzzlefinal.setVisibility(View.GONE);
         // BBDD
