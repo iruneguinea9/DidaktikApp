@@ -10,8 +10,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button hasi,jarraitu,pruebas;
-    private int piezasConseguidas;
+    private Button hasi,jarraitu;
     ImageButton creditos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         ProgresoDao pd = new ProgresoDao();
         hasi = findViewById(R.id.hasi);
         jarraitu = findViewById(R.id.jarraitu);
-        pruebas = findViewById(R.id.pruebas);
         creditos = findViewById(R.id.creditos);
         HechosSQLiteHelper dinadbh =
                 new HechosSQLiteHelper(this, "DBDina", null, 1);
@@ -41,13 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        pruebas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ParaProbarActividades.class);
-                startActivity(intent);
-            }
-        });
+
         creditos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
