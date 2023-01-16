@@ -89,7 +89,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="30sp"
         android:background="@color/azulSecundario"
-        android:text="©DINA\n2022"
+        android:text="©DINA\n2023"
         android:textAlignment="center" />
 
 </LinearLayout>
