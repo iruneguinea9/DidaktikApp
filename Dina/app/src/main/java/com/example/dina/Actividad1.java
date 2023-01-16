@@ -117,28 +117,28 @@ public class Actividad1 extends AppCompatActivity {
         finish();
     }
     private boolean comprobarResultados(){
-        if(!gap1.getText().toString().toLowerCase().equals(respuestas[0])) {
+        if(!gap1.getText().toString().toLowerCase().trim().equals(respuestas[0])) {
             return false;
         }
-        if(!gap2.getText().toString().toLowerCase().equals(respuestas[1])) {
+        if(!gap2.getText().toString().toLowerCase().trim().equals(respuestas[1])) {
             return false;
         }
-        if(!gap3.getText().toString().toLowerCase().equals(respuestas[2])) {
+        if(!gap3.getText().toString().toLowerCase().trim().equals(respuestas[2])) {
             return false;
         }
-        if(!gap4.getText().toString().toLowerCase().equals(respuestas[3])) {
+        if(!gap4.getText().toString().toLowerCase().trim().equals(respuestas[3])) {
             return false;
         }
-        if(!gap5.getText().toString().toLowerCase().equals(respuestas[4])) {
+        if(!gap5.getText().toString().toLowerCase().trim().equals(respuestas[4])) {
             return false;
         }
-        if(!gap6.getText().toString().toLowerCase().equals(respuestas[5])) {
+        if(!gap6.getText().toString().toLowerCase().trim().equals(respuestas[5])) {
             return false;
         }
-        if(!gap7.getText().toString().toLowerCase().equals(respuestas[6])) {
+        if(!gap7.getText().toString().toLowerCase().trim().equals(respuestas[6])) {
             return false;
         }
-        if(!gap8.getText().toString().toLowerCase().equals(respuestas[7])) {
+        if(!gap8.getText().toString().toLowerCase().trim().equals(respuestas[7])) {
             return false;
         }
         return true;
