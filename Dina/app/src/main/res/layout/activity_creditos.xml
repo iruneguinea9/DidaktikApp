@@ -38,7 +38,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/garatzaileak"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:layout_weight="1"
