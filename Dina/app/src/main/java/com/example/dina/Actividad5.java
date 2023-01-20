@@ -66,7 +66,7 @@ public class Actividad5 extends AppCompatActivity {
                         rectAntes = rectAhora;
                         arrList.add(v);
                         resul.append(((TextView) v).getText());
-                        v.setBackgroundColor(Color.RED);
+                        v.setBackgroundColor(getColor(R.color.amornico));
                         boolean posible = false;
                         for (TextView palabra : palabras.keySet()) {
                             if (!palabras.get(palabra)) {
@@ -76,7 +76,7 @@ public class Actividad5 extends AppCompatActivity {
                                 if (palabra.getText().toString().toUpperCase().equals(resul.getText().toString())) {
                                     posible = true;
                                     palabras.put(palabra, true);
-                                    palabra.setTextColor(getColor(R.color.amornico));
+                                    palabra.setTextColor(getColor(R.color.azulPrimario));
                                     palabraAcertada();
                                     varificadorCompletado();
                                     resul.setText("");
@@ -105,7 +105,7 @@ public class Actividad5 extends AppCompatActivity {
 
     private void colorAcertado(){
         for (View x : arrListAcertadas){
-            x.setBackgroundColor(getColor(R.color.amarilloPrimario));
+            x.setBackgroundColor(getColor(R.color.azulPrimario));
         }
     }
 
