@@ -52,18 +52,21 @@
                     android:id="@+id/rbRespuesta1Act7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:buttonTint="@color/azulPrimario"
                     android:text="12 metro" />
 
                 <RadioButton
                     android:id="@+id/rbRespuesta2Act7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:buttonTint="@color/azulPrimario"
                     android:text="15 metro" />
 
                 <RadioButton
                     android:id="@+id/rbRespuesta3Act7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:buttonTint="@color/azulPrimario"
                     android:text="17 metro" />
             </RadioGroup>
         </LinearLayout>
