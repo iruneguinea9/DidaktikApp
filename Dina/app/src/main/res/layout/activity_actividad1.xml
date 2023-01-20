@@ -168,6 +168,7 @@
             android:text="por las calles" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -195,6 +196,7 @@
             android:text="!" />
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/txt13"
         android:layout_width="match_parent"
@@ -221,6 +223,7 @@
             android:textSize="14sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -254,6 +257,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Son de Santurce" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

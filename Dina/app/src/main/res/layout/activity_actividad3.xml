@@ -33,7 +33,8 @@
             android:layout_marginRight="12sp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Egia" />
+            android:text="Egia"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView5"
@@ -41,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Gezurra" />
+            android:text="Gezurra"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <View
@@ -52,6 +54,7 @@
         android:layout_marginVertical="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:layout_editor_absoluteX="87dp" />
 
@@ -64,6 +67,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:text="Arrantzatzen duen haurraren eskultura burdinez egina dago"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup1"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +90,7 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1"
             android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/amarilloPrimario"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:layout_editor_absoluteX="87dp" />
 
@@ -94,13 +99,17 @@
             android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp" />
+            android:layout_marginRight="19sp"
+            android:buttonTint="@color/azulPrimario"
+            android:drawableTint="@color/amarilloPrimario" />
 
         <RadioButton
             android:id="@+id/rbFalso1"
             android:layout_width="30sp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10sp" />
+            android:layout_marginRight="10sp"
+            android:buttonTint="@color/azulPrimario"
+            android:drawableTint="@color/amornico" />
 
     </RadioGroup>
 
@@ -112,6 +121,7 @@
         android:layout_marginVertical="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
         tools:layout_editor_absoluteX="87dp" />
 
@@ -125,6 +135,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:text="Eskulturak, portuko ura noraino iristen zen adierazten du."
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,6 +158,7 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1"
             android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/amarilloPrimario"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:layout_editor_absoluteX="87dp" />
 
@@ -155,13 +167,17 @@
             android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp" />
+            android:layout_marginRight="19sp"
+            android:buttonTint="@color/azulPrimario"
+            android:drawableTint="@color/azulPrimario" />
 
         <RadioButton
             android:id="@+id/rbFalso2"
             android:layout_width="30sp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10sp" />
+            android:layout_marginRight="10sp"
+            android:buttonTint="@color/azulPrimario"
+            android:foregroundTint="@color/amarilloPrimario" />
 
     </RadioGroup>
 
@@ -172,6 +188,7 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
         tools:layout_editor_absoluteX="87dp" />
 
@@ -184,6 +201,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:text="Arrantzaleek San Jorge Elizan deskargatzen zituzten upeltegiak. "
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
         app:layout_constraintStart_toStartOf="parent"
@@ -206,6 +224,7 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1"
             android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/amarilloPrimario"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:layout_editor_absoluteX="87dp" />
 
@@ -214,13 +233,15 @@
             android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp" />
+            android:layout_marginRight="19sp"
+            android:buttonTint="@color/azulPrimario" />
 
         <RadioButton
             android:id="@+id/rbFalso3"
             android:layout_width="30sp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10sp" />
+            android:layout_marginRight="10sp"
+            android:buttonTint="@color/azulPrimario" />
 
     </RadioGroup>
 
@@ -232,6 +253,7 @@
         android:layout_marginVertical="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
         tools:layout_editor_absoluteX="87dp" />
 
@@ -244,6 +266,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:text="1901ean Santurtzi eta Ortuella elkartu ziren."
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view5"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
         app:layout_constraintStart_toStartOf="parent"
@@ -266,6 +289,7 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1"
             android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/amarilloPrimario"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:layout_editor_absoluteX="87dp" />
 
@@ -274,13 +298,15 @@
             android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp" />
+            android:layout_marginRight="19sp"
+            android:buttonTint="@color/azulPrimario" />
 
         <RadioButton
             android:id="@+id/rbFalso4"
             android:layout_width="30sp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10sp" />
+            android:layout_marginRight="10sp"
+            android:buttonTint="@color/azulPrimario" />
 
     </RadioGroup>
 
@@ -292,6 +318,7 @@
         android:layout_marginVertical="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
         tools:layout_editor_absoluteX="87dp" />
 
@@ -305,6 +332,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:text="Santurtziko eraldaketaren ondoren, arrantzaleak haien lantokietan mantendu ziren."
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/view6"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup5"
         app:layout_constraintStart_toStartOf="parent"
@@ -327,6 +355,7 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1"
             android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/amarilloPrimario"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:layout_editor_absoluteX="87dp" />
 
@@ -335,13 +364,15 @@
             android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp" />
+            android:layout_marginRight="19sp"
+            android:buttonTint="@color/azulPrimario" />
 
         <RadioButton
             android:id="@+id/rbFalso5"
             android:layout_width="30sp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10sp" />
+            android:layout_marginRight="10sp"
+            android:buttonTint="@color/azulPrimario" />
 
     </RadioGroup>
 
@@ -352,6 +383,7 @@
         android:layout_marginVertical="5dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/azulPrimario"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
         tools:layout_editor_absoluteX="87dp" />
 
