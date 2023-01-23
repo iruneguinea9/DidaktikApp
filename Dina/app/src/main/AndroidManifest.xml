@@ -83,7 +83,8 @@
         </activity>
         <activity
             android:name=".mapa"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Dina.Main">>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -195,7 +196,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Dina.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

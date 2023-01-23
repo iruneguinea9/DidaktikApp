@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoinicio"
     android:orientation="vertical"
-    android:layout_margin="15dp"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView3"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:text="ARRANTZALEEN BIZITZAN MURGILTZEN"
-        android:textAlignment="center"
-        android:textColor="@color/azulPrimario"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="342dp"
-        app:srcCompat="@drawable/dina" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="211dp" />
 
-    <Button
-        android:id="@+id/hasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="HASI"
-        android:textColor="@color/blanco" />
+        <ImageButton
+            android:id="@+id/hasi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circulo_boton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hasi" />
 
-    <Button
-        android:id="@+id/jarraitu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="JARRAITU" />
+        <ImageButton
+            android:id="@+id/jarraitu"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="right"
+            android:background="@drawable/circulo_boton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/jarraitu" />
 
-    <ImageButton
-        android:id="@+id/creditos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/amarilloPrimario"
-        android:scaleType="fitEnd"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        <ImageButton
+            android:id="@+id/creditos"
+            android:layout_width="74dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circulo_boton"
+            android:scaleType="centerCrop"
+            android:tint="@color/amarilloPrimario"
+            app:srcCompat="@drawable/signo_interrogacion" />
+
+    </LinearLayout>
+
 </LinearLayout>
