@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondotodo2"
     android:orientation="vertical"
     tools:context=".Actividad5">
 
@@ -45,6 +46,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@drawable/cuadro_texto"
             android:orientation="vertical">
 
             <TextView
@@ -69,12 +71,12 @@
                 android:textAllCaps="false"
                 android:textSize="20sp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/palabraSopa8"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="BIMECME"-->
-<!--                android:textSize="20sp" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/palabraSopa8"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="BIMECME"-->
+            <!--                android:textSize="20sp" />-->
         </LinearLayout>
 
         <View
@@ -90,6 +92,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@drawable/cuadro_texto"
             android:orientation="vertical">
 
             <TextView
@@ -116,12 +119,12 @@
                 android:textAllCaps="false"
                 android:textSize="20sp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/palabraSopa9"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="ASJOPKH"-->
-<!--                android:textSize="20sp" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/palabraSopa9"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="ASJOPKH"-->
+            <!--                android:textSize="20sp" />-->
 
         </LinearLayout>
     </LinearLayout>

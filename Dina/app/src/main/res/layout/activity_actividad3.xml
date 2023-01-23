@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/fondotodo"
     android:orientation="vertical"
     tools:context=".Actividad3">
 
@@ -20,8 +20,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="25dp"
+        android:background="@drawable/cuadro_texto"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -33,6 +34,7 @@
             android:layout_marginRight="12sp"
             android:layout_weight="1"
             android:gravity="center"
+            android:paddingLeft="15dp"
             android:text="Egia"
             android:textColor="@color/black" />
 
@@ -63,9 +65,12 @@
     <TextView
         android:id="@+id/tvPregunta1Act3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@drawable/cuadro_texto"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
         android:text="Arrantzatzen duen haurraren eskultura burdinez egina dago"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view2"
@@ -131,9 +136,12 @@
     <TextView
         android:id="@+id/tvPregunta2Act3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@drawable/cuadro_texto"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
         android:text="Eskulturak, portuko ura noraino iristen zen adierazten du."
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view3"
@@ -197,9 +205,12 @@
     <TextView
         android:id="@+id/tvPregunta3Act3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@drawable/cuadro_texto"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
         android:text="Arrantzaleek San Jorge Elizan deskargatzen zituzten upeltegiak. "
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view4"
@@ -262,9 +273,12 @@
     <TextView
         android:id="@+id/tvPregunta4Act3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@drawable/cuadro_texto"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
         android:text="1901ean Santurtzi eta Ortuella elkartu ziren."
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/view5"
@@ -328,9 +342,12 @@
     <TextView
         android:id="@+id/tvPregunta5Act3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@drawable/cuadro_texto"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
         android:text="Santurtziko eraldaketaren ondoren, arrantzaleak haien lantokietan mantendu ziren."
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/view6"

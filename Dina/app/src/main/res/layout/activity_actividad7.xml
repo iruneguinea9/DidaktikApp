@@ -4,72 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/fondotodo2"
     android:orientation="vertical"
     tools:context=".Actividad7">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:text="Galderak Jolasa"
-        android:textColor="@color/black"
-        android:textSize="30dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="127dp"
-            android:layout_height="237dp"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/dina" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cuadro_texto"
+            android:gravity="center"
+            android:text="Galderak Jolasa"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvTextoAct7"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="127dp"
+                android:layout_height="237dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/dina" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Zenbat neurtzen du traineru-estropadetan erabiltzen diren ontziak?"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:orientation="vertical">
 
-            <RadioGroup
-                android:id="@+id/rgActividad7"
-                android:layout_width="255dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/tvTextoAct7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Zenbat neurtzen du traineru-estropadetan erabiltzen diren ontziak?"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-                <RadioButton
-                    android:id="@+id/rbRespuesta1Act7"
-                    android:layout_width="match_parent"
+                <RadioGroup
+                    android:id="@+id/rgActividad7"
+                    android:layout_width="255dp"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/azulPrimario"
-                    android:text="12 metro" />
+                    android:layout_marginTop="10dp">
 
-                <RadioButton
-                    android:id="@+id/rbRespuesta2Act7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/azulPrimario"
-                    android:text="15 metro" />
+                    <RadioButton
+                        android:id="@+id/rbRespuesta1Act7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/cuadro_texto"
+                        android:buttonTint="@color/amarilloPrimario"
+                        android:paddingLeft="5dp"
+                        android:text="12 metro" />
 
-                <RadioButton
-                    android:id="@+id/rbRespuesta3Act7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/azulPrimario"
-                    android:text="17 metro" />
-            </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/rbRespuesta2Act7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/cuadro_texto"
+                        android:buttonTint="@color/amarilloPrimario"
+                        android:paddingLeft="5dp"
+                        android:text="15 metro" />
+
+                    <RadioButton
+                        android:id="@+id/rbRespuesta3Act7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cuadro_texto"
+                        android:buttonTint="@color/amarilloPrimario"
+                        android:paddingLeft="5dp"
+                        android:text="17 metro" />
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

@@ -4,113 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/fondotodo2"
     android:orientation="vertical"
     tools:context=".Actividad6">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="182dp"
-            android:layout_height="322dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/diferencia_origen" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blanco">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="182dp"
-            android:layout_height="322dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.964"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/diferencia_diferente" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="182dp"
+                android:layout_height="322dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/diferencia_origen" />
 
-        <ImageView
-            android:id="@+id/ivAcierto1"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="55dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="182dp"
+                android:layout_height="322dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/diferencia_diferente" />
 
-        <ImageView
-            android:id="@+id/ivAcierto"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="172dp"
-            android:layout_marginEnd="136dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="55dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/ivAcierto2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="197dp"
-            android:layout_marginEnd="108dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="172dp"
+                android:layout_marginEnd="136dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/ivAcierto3"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginEnd="78dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="197dp"
+                android:layout_marginEnd="108dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/ivAcierto4"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="246dp"
-            android:layout_marginEnd="66dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginEnd="78dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/ivAcierto6"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="95dp"
-            android:layout_marginEnd="113dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="246dp"
+                android:layout_marginEnd="66dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/ivAcierto5"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="34dp"
-            android:onClick="acierto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <ImageView
+                android:id="@+id/ivAcierto6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="113dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/ivAcierto5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="34dp"
+                android:onClick="acierto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-    <TextView
-        android:id="@+id/tvAciertos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvAciertos"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cuadro_texto"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </LinearLayout>

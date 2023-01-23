@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
+    android:background="@drawable/fondotodo"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -19,7 +20,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/amarilloPrimario"
-            app:srcCompat="@android:drawable/ic_media_previous" />
+            android:tintMode="multiply"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            app:tint="@color/azulPrimario" />
 
         <ImageButton
             android:id="@+id/botonPause"
@@ -27,7 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/amarilloPrimario"
-            app:srcCompat="@android:drawable/ic_media_pause" />
+            android:tintMode="multiply"
+            app:srcCompat="@android:drawable/ic_media_pause"
+            app:tint="@color/azulPrimario" />
 
         <ImageButton
             android:id="@+id/botonPlay"
@@ -35,7 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/amarilloPrimario"
-            app:srcCompat="@android:drawable/ic_media_play" />
+            android:tintMode="multiply"
+            app:srcCompat="@android:drawable/ic_media_play"
+            app:tint="@color/azulPrimario" />
 
     </LinearLayout>
 
@@ -48,7 +55,8 @@
             android:id="@+id/txt1"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Desde" />
+            android:text="Desde"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap1"
@@ -56,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -63,7 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" a Bilbao" />
+            android:text=" a Bilbao"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -71,7 +81,8 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vengo por toda la orilla," />
+        android:text="Vengo por toda la orilla,"
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,7 +93,8 @@
             android:id="@+id/txt3"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Con mi" />
+            android:text="Con mi"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap2"
@@ -90,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -97,7 +110,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" remangada" />
+            android:text=" remangada"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -105,7 +119,8 @@
         android:id="@+id/txt5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Luciendo la pantorrilla," />
+        android:text="Luciendo la pantorrilla,"
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,7 +131,8 @@
             android:id="@+id/txt6"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Vengo" />
+            android:text="Vengo"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap3"
@@ -124,6 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -131,7 +148,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="y corriendo" />
+            android:text="y corriendo"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -139,7 +157,8 @@
         android:id="@+id/txt8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Porque me oprime el corsé" />
+        android:text="Porque me oprime el corsé"
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -150,7 +169,8 @@
             android:id="@+id/txt9"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Voy" />
+            android:text="Voy"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap4"
@@ -158,6 +178,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -165,7 +186,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="por las calles" />
+            android:text="por las calles"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -178,7 +200,8 @@
             android:id="@+id/txt11"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="¿Quién " />
+            android:text="¿Quién "
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap5"
@@ -186,6 +209,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -193,7 +217,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="!" />
+            android:text="!"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -201,7 +226,8 @@
         android:id="@+id/txt13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sardinas frescué" />
+        android:text="Sardinas frescué"
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -212,7 +238,8 @@
             android:id="@+id/txt14"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Mis" />
+            android:text="Mis"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap6"
@@ -220,6 +247,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
     </LinearLayout>
@@ -233,7 +261,8 @@
             android:id="@+id/txt16"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
-            android:text="Qué" />
+            android:text="Qué"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap7"
@@ -241,6 +270,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -248,7 +278,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="son" />
+            android:text="son"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -256,7 +287,8 @@
         android:id="@+id/txt18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Son de Santurce" />
+        android:text="Son de Santurce"
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -267,7 +299,8 @@
             android:id="@+id/txt19"
             android:layout_width="88dp"
             android:layout_height="wrap_content"
-            android:text="Las traigo" />
+            android:text="Las traigo"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/gap8"
@@ -275,6 +308,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
     </LinearLayout>

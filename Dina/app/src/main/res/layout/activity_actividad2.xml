@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/fondotodo2"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Actividad2">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:gravity="right">
 
         <ImageView
@@ -22,9 +24,11 @@
 
         <TextView
             android:id="@+id/tvNVidas"
-            android:layout_width="30dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|right"
+            android:background="@drawable/cuadro_texto"
+            android:gravity="center"
             android:text="7"
             android:textColor="@color/black"
             android:textSize="35sp" />
