@@ -44,8 +44,10 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
             android:background="@drawable/cuadro_texto"
             android:orientation="vertical">
 
@@ -53,6 +55,8 @@
                 android:id="@+id/palabraSopa1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
                 android:text="SARDINA"
                 android:textSize="20sp" />
 
@@ -60,6 +64,7 @@
                 android:id="@+id/palabraSopa2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="SAREA"
                 android:textSize="20sp" />
 
@@ -67,6 +72,7 @@
                 android:id="@+id/palabraSopa3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="ITSASMUSEO"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
@@ -90,8 +96,10 @@
             tools:layout_editor_absoluteX="87dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
             android:background="@drawable/cuadro_texto"
             android:orientation="vertical">
 
@@ -99,6 +107,8 @@
                 android:id="@+id/palabraSopa4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
                 android:text="ARRANTZALE"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
@@ -107,6 +117,7 @@
                 android:id="@+id/palabraSopa5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="ENKANTE"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
@@ -115,6 +126,7 @@
                 android:id="@+id/palabraSopa6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="KOFRADIA"
                 android:textAllCaps="false"
                 android:textSize="20sp" />

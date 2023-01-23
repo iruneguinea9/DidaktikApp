@@ -54,8 +54,6 @@ public class Actividad5 extends AppCompatActivity {
 
         final String[] anterior = {""};
 
-
-
         cargarMapa();
         gv.setOnTouchListener((view, motionEvent) -> {
             for(int i = 0; i < gv.getChildCount(); i++) {
@@ -111,7 +109,7 @@ public class Actividad5 extends AppCompatActivity {
 
     private void limpiarSeleccionado(){
         for (View x : arrList){
-            x.setBackgroundColor(getColor(R.color.blanco));
+            x.setBackgroundColor(0);
         }
         arrList.clear();
     }
