@@ -69,7 +69,8 @@
                         android:background="@drawable/cuadro_texto"
                         android:buttonTint="@color/amarilloPrimario"
                         android:paddingLeft="5dp"
-                        android:text="12 metro" />
+                        android:text="12 metro"
+                        android:textColor="@color/black" />
 
                     <RadioButton
                         android:id="@+id/rbRespuesta2Act7"
@@ -79,7 +80,8 @@
                         android:background="@drawable/cuadro_texto"
                         android:buttonTint="@color/amarilloPrimario"
                         android:paddingLeft="5dp"
-                        android:text="15 metro" />
+                        android:text="15 metro"
+                        android:textColor="@color/black" />
 
                     <RadioButton
                         android:id="@+id/rbRespuesta3Act7"
@@ -88,7 +90,8 @@
                         android:background="@drawable/cuadro_texto"
                         android:buttonTint="@color/amarilloPrimario"
                         android:paddingLeft="5dp"
-                        android:text="17 metro" />
+                        android:text="17 metro"
+                        android:textColor="@color/black" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>

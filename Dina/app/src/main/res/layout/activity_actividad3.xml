@@ -1,418 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondotodo"
+    android:background="@drawable/fondotodo2"
     android:orientation="vertical"
     tools:context=".Actividad3">
 
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text=" "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="105dp"
-        android:layout_height="25dp"
-        android:background="@drawable/cuadro_texto"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvNVidas"
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="12sp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:paddingLeft="15dp"
-            android:text="Egia"
-            android:textColor="@color/black" />
+            android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Gezurra"
-            android:textColor="@color/black" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="105dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/cuadro_texto"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNVidas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12sp"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="2dp"
+                        android:text="Egia"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="2dp"
+                        android:paddingRight="6dp"
+                        android:text="Gezurra"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta1Act3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:text="Arrantzatzen duen haurraren eskultura burdinez egina dago"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbVerdadero1"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="19sp"
+                        android:buttonTint="@color/azulPrimario"
+                        android:drawableTint="@color/amarilloPrimario" />
+
+                    <RadioButton
+                        android:id="@+id/rbFalso1"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:buttonTint="@color/azulPrimario"
+                        android:drawableTint="@color/amornico" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta2Act3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:text="Eskulturak, portuko ura noraino iristen zen adierazten du."
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbVerdadero2"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="19sp"
+                        android:buttonTint="@color/azulPrimario"
+                        android:drawableTint="@color/azulPrimario" />
+
+                    <RadioButton
+                        android:id="@+id/rbFalso2"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:buttonTint="@color/azulPrimario"
+                        android:foregroundTint="@color/amarilloPrimario" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta3Act3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:text="Arrantzaleek San Jorge Elizan deskargatzen zituzten upeltegiak. "
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbVerdadero3"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="19sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                    <RadioButton
+                        android:id="@+id/rbFalso3"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta4Act3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:text="1901ean Santurtzi eta Ortuella elkartu ziren."
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbVerdadero4"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="19sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                    <RadioButton
+                        android:id="@+id/rbFalso4"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta5Act3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cuadro_texto"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp"
+                    android:text="Santurtziko eraldaketaren ondoren, arrantzaleak haien lantokietan mantendu ziren."
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbVerdadero5"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="19sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                    <RadioButton
+                        android:id="@+id/rbFalso5"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:buttonTint="@color/azulPrimario" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnAct3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="validacion"
+                    android:text="Egiaztatu" />
+
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="5dp"
-        android:layout_marginVertical="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="87dp" />
 
-
-    <!--Pregunta 1-->
-    <TextView
-        android:id="@+id/tvPregunta1Act3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/cuadro_texto"
-        android:paddingLeft="12dp"
-        android:paddingTop="5dp"
-        android:text="Arrantzatzen duen haurraren eskultura burdinez egina dago"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/view2"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view">
-
-        <View
-            android:id="@+id/view7"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:backgroundTint="@color/amarilloPrimario"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:layout_editor_absoluteX="87dp" />
-
-        <RadioButton
-            android:id="@+id/rbVerdadero1"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp"
-            android:buttonTint="@color/azulPrimario"
-            android:drawableTint="@color/amarilloPrimario" />
-
-        <RadioButton
-            android:id="@+id/rbFalso1"
-            android:layout_width="30sp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10sp"
-            android:buttonTint="@color/azulPrimario"
-            android:drawableTint="@color/amornico" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="5dp"
-        android:layout_marginVertical="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
-        tools:layout_editor_absoluteX="87dp" />
-
-
-    <!--Pregunta 2-->
-
-    <TextView
-        android:id="@+id/tvPregunta2Act3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/cuadro_texto"
-        android:paddingLeft="12dp"
-        android:paddingTop="5dp"
-        android:text="Eskulturak, portuko ura noraino iristen zen adierazten du."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2">
-
-        <View
-            android:id="@+id/view8"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:backgroundTint="@color/amarilloPrimario"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:layout_editor_absoluteX="87dp" />
-
-        <RadioButton
-            android:id="@+id/rbVerdadero2"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp"
-            android:buttonTint="@color/azulPrimario"
-            android:drawableTint="@color/azulPrimario" />
-
-        <RadioButton
-            android:id="@+id/rbFalso2"
-            android:layout_width="30sp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10sp"
-            android:buttonTint="@color/azulPrimario"
-            android:foregroundTint="@color/amarilloPrimario" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
-        tools:layout_editor_absoluteX="87dp" />
-
-
-    <!--Pregunta 3-->
-    <TextView
-        android:id="@+id/tvPregunta3Act3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/cuadro_texto"
-        android:paddingLeft="12dp"
-        android:paddingTop="5dp"
-        android:text="Arrantzaleek San Jorge Elizan deskargatzen zituzten upeltegiak. "
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/view4"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3">
-
-        <View
-            android:id="@+id/view9"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:backgroundTint="@color/amarilloPrimario"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:layout_editor_absoluteX="87dp" />
-
-        <RadioButton
-            android:id="@+id/rbVerdadero3"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp"
-            android:buttonTint="@color/azulPrimario" />
-
-        <RadioButton
-            android:id="@+id/rbFalso3"
-            android:layout_width="30sp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10sp"
-            android:buttonTint="@color/azulPrimario" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="5dp"
-        android:layout_marginVertical="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
-        tools:layout_editor_absoluteX="87dp" />
-
-
-    <!--Pregunta 4-->
-    <TextView
-        android:id="@+id/tvPregunta4Act3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/cuadro_texto"
-        android:paddingLeft="12dp"
-        android:paddingTop="5dp"
-        android:text="1901ean Santurtzi eta Ortuella elkartu ziren."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/view5"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4">
-
-        <View
-            android:id="@+id/view10"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:backgroundTint="@color/amarilloPrimario"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:layout_editor_absoluteX="87dp" />
-
-        <RadioButton
-            android:id="@+id/rbVerdadero4"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp"
-            android:buttonTint="@color/azulPrimario" />
-
-        <RadioButton
-            android:id="@+id/rbFalso4"
-            android:layout_width="30sp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10sp"
-            android:buttonTint="@color/azulPrimario" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/view5"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="5dp"
-        android:layout_marginVertical="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
-        tools:layout_editor_absoluteX="87dp" />
-
-
-    <!--Pregunta 5-->
-
-    <TextView
-        android:id="@+id/tvPregunta5Act3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/cuadro_texto"
-        android:paddingLeft="12dp"
-        android:paddingTop="5dp"
-        android:text="Santurtziko eraldaketaren ondoren, arrantzaleak haien lantokietan mantendu ziren."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/view6"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5">
-
-        <View
-            android:id="@+id/view11"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:backgroundTint="@color/amarilloPrimario"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            tools:layout_editor_absoluteX="87dp" />
-
-        <RadioButton
-            android:id="@+id/rbVerdadero5"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="19sp"
-            android:buttonTint="@color/azulPrimario" />
-
-        <RadioButton
-            android:id="@+id/rbFalso5"
-            android:layout_width="30sp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10sp"
-            android:buttonTint="@color/azulPrimario" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginVertical="5dp"
-        android:layout_weight="1"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@color/azulPrimario"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
-        tools:layout_editor_absoluteX="87dp" />
-
-    <Button
-        android:id="@+id/btnAct3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="validacion"
-        android:text="Egiaztatu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
