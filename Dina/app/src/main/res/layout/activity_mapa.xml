@@ -44,8 +44,9 @@
             app:srcCompat="@drawable/piezapuzle20x20escala10" />
 
         <LinearLayout
-            android:layout_width="50dp"
+            android:layout_width="66dp"
             android:layout_height="match_parent"
+            android:background="@drawable/cuadro_texto"
             android:orientation="horizontal">
 
             <TextView
@@ -54,10 +55,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:layout_weight="0.03"
-                android:shadowColor="@color/amarilloPrimario"
                 android:text="0"
                 android:textAlignment="textEnd"
-                android:textColor="@color/amarilloPrimario"
+                android:textColor="@color/grisbonito"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -67,10 +67,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:layout_weight="0.05"
-                android:shadowColor="@color/amarilloPrimario"
                 android:text="/ 7"
                 android:textAlignment="center"
-                android:textColor="@color/amarilloPrimario"
+                android:textColor="@color/grisbonito"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>

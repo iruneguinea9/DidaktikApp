@@ -94,7 +94,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5sp"
                         android:layout_marginRight="19sp"
-                        android:buttonTint="@color/azulPrimario"
+                        android:buttonTint="@color/amarilloPrimario"
                         android:drawableTint="@color/amarilloPrimario" />
 
                     <RadioButton
@@ -102,7 +102,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10sp"
-                        android:buttonTint="@color/azulPrimario"
+                        android:buttonTint="@color/amarilloPrimario"
                         android:drawableTint="@color/amornico" />
 
                 </RadioGroup>
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5sp"
                         android:layout_marginRight="19sp"
-                        android:buttonTint="@color/azulPrimario"
+                        android:buttonTint="@color/amarilloPrimario"
                         android:drawableTint="@color/azulPrimario" />
 
                     <RadioButton
@@ -147,7 +147,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10sp"
-                        android:buttonTint="@color/azulPrimario"
+                        android:buttonTint="@color/amarilloPrimario"
                         android:foregroundTint="@color/amarilloPrimario" />
 
                 </RadioGroup>
@@ -184,14 +184,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5sp"
                         android:layout_marginRight="19sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                     <RadioButton
                         android:id="@+id/rbFalso3"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                 </RadioGroup>
             </TableRow>
@@ -227,14 +227,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5sp"
                         android:layout_marginRight="19sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                     <RadioButton
                         android:id="@+id/rbFalso4"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                 </RadioGroup>
             </TableRow>
@@ -271,14 +271,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5sp"
                         android:layout_marginRight="19sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                     <RadioButton
                         android:id="@+id/rbFalso5"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10sp"
-                        android:buttonTint="@color/azulPrimario" />
+                        android:buttonTint="@color/amarilloPrimario" />
 
                 </RadioGroup>
             </TableRow>

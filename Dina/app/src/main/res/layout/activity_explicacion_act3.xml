@@ -71,7 +71,6 @@
                     android:layout_height="128dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/cuadro_texto"
-                    android:padding="4sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/iv_myra_notification"
                     app:layout_constraintRight_toLeftOf="@+id/iv_one_way"
@@ -81,10 +80,14 @@
                         android:id="@+id/texto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="7dp"
                         android:gravity="left"
+                        android:padding="4sp"
                         android:text="@{itemData.notification.message}"
                         android:textColor="@android:color/black"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
                 </ScrollView>
                 />
 
