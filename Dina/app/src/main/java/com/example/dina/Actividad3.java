@@ -24,6 +24,13 @@ public class Actividad3 extends AppCompatActivity {
             // la ha hecho bien, le damos una pieza
             Dialogo_gana_pieza_act3 d1 = new Dialogo_gana_pieza_act3();
             d1.show(getSupportFragmentManager(),"mensaje");
+
+            // Pasamos a True el la actividad en la base de datos
+            ProgresoDao pd = new ProgresoDao();
+            HechosSQLiteHelper dinadbh =
+                    new HechosSQLiteHelper(this, "DBDina", null, 1);
+            pd.setTrue(dinadbh,"Juego 3");
+
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {

@@ -77,7 +77,6 @@ public class Actividad7 extends AppCompatActivity {
                         // Indormar al usuario de su victoria
                         Dialogo_gana_pieza_act7 d1 = new Dialogo_gana_pieza_act7();
                         d1.show(getSupportFragmentManager(),"mensaje");
-                        // TODO cargar la actividad mapa cuando este hecha
 
                         // Pasamos a True el la actividad en la base de datos
                         HechosSQLiteHelper dinadbh =

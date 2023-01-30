@@ -130,6 +130,13 @@ public class Actividad5 extends AppCompatActivity {
         if(!palabras.containsValue(false)){
             Dialogo_gana_pieza_act5 d1 = new Dialogo_gana_pieza_act5();
             d1.show(getSupportFragmentManager(),"mensaje");
+
+            // Pasamos a True el la actividad en la base de datos
+            ProgresoDao pd = new ProgresoDao();
+            HechosSQLiteHelper dinadbh =
+                    new HechosSQLiteHelper(this, "DBDina", null, 1);
+            pd.setTrue(dinadbh,"Juego 5");
+
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {

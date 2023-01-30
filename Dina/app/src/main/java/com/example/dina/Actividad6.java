@@ -52,7 +52,7 @@ public class Actividad6 extends AppCompatActivity {
         HechosSQLiteHelper dinadbh =
                 new HechosSQLiteHelper(getBaseContext(), "DBDina", null, 1);
         ProgresoDao pd = new ProgresoDao();
-        pd.setTrue(dinadbh,"Juego 7");
+        pd.setTrue(dinadbh,"Juego 6");
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {

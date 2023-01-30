@@ -109,15 +109,14 @@ public class Actividad2 extends AppCompatActivity {
 
     private void finDelJuego(boolean ganar){
         if (ganar == true) {
-            // Indormar al usuario de su victoria
+            // Informar al usuario de su victoria
             Dialogo_gana_pieza_act2 d1 = new Dialogo_gana_pieza_act2();
             d1.show(getSupportFragmentManager(),"mensaje");
-            // TODO cargar la actividad mapa cuando este hecha
 
             // Pasamos a True el la actividad en la base de datos
+            ProgresoDao pd = new ProgresoDao();
             HechosSQLiteHelper dinadbh =
                     new HechosSQLiteHelper(this, "DBDina", null, 1);
-            ProgresoDao pd = new ProgresoDao();
             pd.setTrue(dinadbh,"Juego 2");
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
