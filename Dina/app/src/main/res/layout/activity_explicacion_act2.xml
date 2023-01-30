@@ -71,6 +71,8 @@
                     android:layout_height="128dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/cuadro_texto"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/iv_myra_notification"
                     app:layout_constraintRight_toLeftOf="@+id/iv_one_way"
