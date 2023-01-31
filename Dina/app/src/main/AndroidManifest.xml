@@ -73,13 +73,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Puzzle"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Actividad6"
             android:exported="false">
             <meta-data
@@ -196,6 +189,13 @@
         </activity>
         <activity
             android:name=".Actividad1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Puzzle"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

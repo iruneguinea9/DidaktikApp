@@ -1,38 +1,201 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Puzzle">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp">
+    <View
+        android:id="@+id/vGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="#AAAAAA"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vPieza_1"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_1_aux" />
+
+            <View
+                android:id="@+id/vPieza_2"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_2_aux" />
+
+            <View
+                android:id="@+id/vPieza_3"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_3_aux" />
+
+            <View
+                android:id="@+id/vPieza_4"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_4_aux" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vPieza_5"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_5_aux" />
+
+            <View
+                android:id="@+id/vPieza_6"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_6_aux" />
+
+            <View
+                android:id="@+id/vPieza_7"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_7_aux" />
+
+            <View
+                android:id="@+id/vPieza_8"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/puzzle_pieza_8_aux" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="546dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="409dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imgPuzzle"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:alpha="0.5"
-            android:scaleType="centerCrop"
-            app:layout_constraintDimensionRatio="H,4:5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/puzzle_fondo_dina" />
+            android:id="@+id/iPieza_5"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginBottom="95dp"
+            app:srcCompat="@drawable/puzzle_pieza_5" />
 
-        <RelativeLayout
-            android:id="@+id/layout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/iPieza_8"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="37dp"
+            app:srcCompat="@drawable/puzzle_pieza_8" />
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/iPieza_4"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="172dp"
+            android:layout_marginBottom="121dp"
+            app:srcCompat="@drawable/puzzle_pieza_4" />
+
+        <ImageView
+            android:id="@+id/iPieza_6"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="289dp"
+            android:layout_marginBottom="103dp"
+            app:srcCompat="@drawable/puzzle_pieza_6" />
+
+        <ImageView
+            android:id="@+id/iPieza_1"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginBottom="71dp"
+            app:srcCompat="@drawable/puzzle_pieza_1" />
+
+        <ImageView
+            android:id="@+id/iPieza_7"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="-1dp"
+            app:srcCompat="@drawable/puzzle_pieza_7" />
+
+        <ImageView
+            android:id="@+id/iPieza_3"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginBottom="31dp"
+            app:srcCompat="@drawable/puzzle_pieza_3" />
+
+        <ImageView
+            android:id="@+id/iPieza_2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="115dp"
+            app:srcCompat="@drawable/puzzle_pieza_2" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

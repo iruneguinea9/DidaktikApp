@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iPieza_3" type="id" />
+    <item name="iPieza_2" type="id" />
+    <item name="iPieza_7" type="id" />
+    <item name="iPieza_1" type="id" />
+    <item name="iPieza_6" type="id" />
+    <item name="iPieza_4" type="id" />
+    <item name="iPieza_8" type="id" />
+    <item name="iPieza_5" type="id" />
+    <item name="vPieza_8" type="id" />
+    <item name="vPieza_7" type="id" />
+    <item name="vPieza_6" type="id" />
+    <item name="vPieza_5" type="id" />
+    <item name="vPieza_4" type="id" />
+    <item name="vPieza_3" type="id" />
+    <item name="vPieza_2" type="id" />
+    <item name="vPieza_1" type="id" />
+</resources>
