@@ -14,43 +14,44 @@
         android:id="@+id/botonacti1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 1" />
+        android:text="Actividad 1 - cancion" />
 
     <Button
         android:id="@+id/botonacti2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 2" />
+        android:text="Actividad 2 - Parejas" />
 
 
     <Button
         android:id="@+id/botonacti3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 3" />
+        android:text="Actividad 3 - VoF" />
 
     <Button
         android:id="@+id/botonacti4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 4" />
+        android:text="Actividad 4 - Crucigrama" />
 
     <Button
         android:id="@+id/botonacti5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 5" />
+        android:text="Actividad 5 - Sopa de letras" />
 
     <Button
         android:id="@+id/botonacti6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 6" />
+        android:text="Actividad 6 - 7 diferencias" />
+
     <Button
         android:id="@+id/botonacti7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actividad 7" />
+        android:text="Actividad 7 - Test" />
     <Button
         android:id="@+id/botonacti8"
         android:layout_width="match_parent"
