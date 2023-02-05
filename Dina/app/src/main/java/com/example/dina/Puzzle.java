@@ -183,7 +183,7 @@ public class Puzzle extends AppCompatActivity implements  View.OnDragListener, V
                 String dragData = item.getText().toString();
 
                 // Displays a message containing the dragged data.
-                Toast.makeText(this, "Dragged data is " + dragData, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Dragged data is " + dragData, Toast.LENGTH_SHORT).show();
 
                 // Turns off any color tints
                 view.getBackground().clearColorFilter();
